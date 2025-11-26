@@ -1,135 +1,60 @@
-/* Reset default margin and padding */
-* {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal CSS Menu</title>
+
+<style>
+/* Reset default spacing */
+body, ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Global Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple → Blue */
-    margin: 0;
-    padding: 20px; 
+/* Navigation bar styling */
+nav {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+/* Horizontal menu */
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
-    min-height: 100vh;
-    color: white;
+    gap: 30px;
 }
 
-/* Main Container */
-section {
-    background-color: white;
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3); /* Purple shadow tint */
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 30px;
-    color: black; /* Text inside section should stay dark */
-}
-
-/* Header */
-header {
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple → Blue */
-    color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-header p {
-    margin: 1rem 0 0;
-}
-
-/* Section Titles */
-h2 {
-    color: #D1C4E9; /* Light purple shade */
-    margin-bottom: 1rem;
-}
-
-/* List Items */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: rgba(209, 196, 233, 0.5); /* Soft purple translucent */
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-    color: black;
-    font-weight: 500;
-}
-
-/* Links */
-a {
-    color: #B39DDB; /* Attractive purple link */
+/* Menu items */
+nav ul li a {
     text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #EDE7F6;
-}
-
-/* Definition List */
-dl dt {
-    font-weight: bold;
-    color: #D1C4E9; /* Light Purple */
-    margin-top: 1rem;
-}
-
-dl dd {
-    margin-left: 1.5rem;
-    color: #EDE7F6;
-}
-
-/* Blockquote */
-blockquote {
-    font-style: oblique;
-    color: #EDE7F6;
-    border-left: 4px solid #B39DDB; /* Purple */
-    padding-left: 1rem;
-    margin-top: 2rem;
-}
-
-/* Navigation bar matching theme */
-nav {
-    background-color: #311B92; /* Dark Purple */
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 800px;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
+    color: #fff;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #B39DDB;
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #ff9800;
+    color: #000;
 }
+</style>
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
-    }
+</head>
+<body>
 
-    header {
-        padding: 1.5rem;
-    }
-}
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
