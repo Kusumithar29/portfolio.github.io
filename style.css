@@ -31,8 +31,8 @@ section {
 
 /* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ff0000;
+    color: red;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -91,7 +91,7 @@ dl dd {
 
 /* Blockquote */
 blockquote {
-    font-style: italic;
+    font-style: oblique;
     color: #555;
     border-left: 4px solid #4CAF50;
     padding-left: 1rem;
