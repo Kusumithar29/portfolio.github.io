@@ -8,13 +8,14 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple → Blue */
     margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    padding: 20px; 
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligns content towards the top */
+    align-items: flex-start; 
     min-height: 100vh;
+    color: white;
 }
 
 /* Main Container */
@@ -23,16 +24,17 @@ section {
     padding: 2rem;
     width: 90%;
     max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3); /* Purple shadow tint */
     border-radius: 8px;
     text-align: center;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+    margin-top: 30px;
+    color: black; /* Text inside section should stay dark */
 }
 
 /* Header */
 header {
-    background-color: #ff0000;
-    color: red;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple → Blue */
+    color: white;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -49,7 +51,7 @@ header p {
 
 /* Section Titles */
 h2 {
-    color: #4CAF50;
+    color: #D1C4E9; /* Light purple shade */
     margin-bottom: 1rem;
 }
 
@@ -60,42 +62,65 @@ ul {
 }
 
 ul li {
-    background-color: #e7f7e7;
+    background-color: rgba(209, 196, 233, 0.5); /* Soft purple translucent */
     margin-bottom: 0.5rem;
     padding: 0.75rem;
     border-radius: 5px;
+    color: black;
+    font-weight: 500;
 }
 
 /* Links */
 a {
-    color: #4CAF50;
+    color: #B39DDB; /* Attractive purple link */
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #EDE7F6;
 }
 
 /* Definition List */
 dl dt {
     font-weight: bold;
-    color: #333;
+    color: #D1C4E9; /* Light Purple */
     margin-top: 1rem;
 }
 
 dl dd {
     margin-left: 1.5rem;
-    color: #666;
+    color: #EDE7F6;
 }
 
 /* Blockquote */
 blockquote {
     font-style: oblique;
-    color: #555;
-    border-left: 4px solid #4CAF50;
+    color: #EDE7F6;
+    border-left: 4px solid #B39DDB; /* Purple */
     padding-left: 1rem;
     margin-top: 2rem;
+}
+
+/* Navigation bar matching theme */
+nav {
+    background-color: #311B92; /* Dark Purple */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #B39DDB;
 }
 
 /* Responsive Design */
@@ -105,6 +130,6 @@ blockquote {
     }
 
     header {
-        padding: 1.5rem;
-    }
+        padding: 1.5rem;
+    }
 }
