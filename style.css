@@ -82,6 +82,32 @@ body {
     padding: 0 20px;
     position: relative;
 }
+/* 1. Base Link Styling (Default State) */
+.team-table a {
+    /* Sets the default link color to WHITE, blending with the rest of the text */
+    color: white; 
+    
+    /* Removes the default underline from the link */
+    text-decoration: none; 
+}
+
+/* 2. Hover Effect Styling */
+.team-table a:hover {
+    /* Changes the text color to BLUE when the cursor is brought over it */
+    color: #4DB8FF; 
+    
+    /* Adds the underline back for emphasis */
+    text-decoration: underline; 
+    
+    /* Ensures the cursor changes to a pointer to confirm clickability */
+    cursor: pointer;
+}
+
+/* 3. General Table Text Color (Ensures USNs and Header match) */
+.team-table {
+    /* Ensures all other text in the table defaults to white */
+    color: white; 
+}
 
 /* --- PROJECT PAGE STYLES --- */
 
