@@ -1,3 +1,8 @@
+/* This CSS rule targets all heading elements: h1, h2, h3, h4, h5, and h6 */
+h1, h2, h3, h4, h5, h6 {
+    /* KEY PROPERTY: Centers the text content horizontally within each heading element */
+    text-align: center;
+}
 /* --- General Reset & Fonts --- */
 * {
     margin: 0;
@@ -108,7 +113,22 @@ body {
     /* Ensures all other text in the table defaults to white */
     color: white; 
 }
+/* Apply this CSS to the PARENT container of the link */
+.container {
+    /* KEY CENTERING PROPERTY: This centers all inline content (text, links, buttons) horizontally */
+    text-align: center;
+    
+    /* Optional: Ensure the container takes up the necessary height if needed */
+    /* You likely already have styles for height and background color applied here */
+}
 
+/* Style for the button/link itself (ensuring it acts like a block for styling) */
+.github-link {
+    /* If the link is an <a> tag, use inline-block to allow padding/margins */
+    display: inline-block; 
+    
+    /* Keep your existing styles for background, border, etc. */
+}
 /* --- PROJECT PAGE STYLES --- */
 
 /* The GitHub Button */
