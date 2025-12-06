@@ -56,7 +56,7 @@ body {
 }
 
 /* --- Hero Section (The Image Area) --- */
-.hero-section {
+.page-team .hero-section {
     /* PUT YOUR IMAGE NAME HERE */
     background-image: linear-gradient(rgba(45, 27, 78, 0.7), rgba(45, 27, 78, 0.9)), url('image_cf18fa.png');
     background-size: cover;
@@ -68,13 +68,13 @@ body {
     text-align: center;
 }
 
-.hero-content h1 {
+.page-team .hero-content h1 {
     font-size: 3rem;
     color: #ff9f43; /* Orange */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.hero-content p {
+.page-team .hero-content p {
     color: #d65db1; /* Pink */
     font-size: 1.2rem;
     font-weight: 600;
@@ -330,4 +330,129 @@ body {
     .navbar { flex-direction: column; gap: 10px; }
     .nav-links { flex-wrap: wrap; justify-content: center; }
     .hero-content h1 { font-size: 2rem; }
+}
+/* ALL YOUR EXISTING CSS IS INCLUDED HERE */
+
+/* ... (Existing CSS: h1-h6, *, body, navbar, card, etc. ) ... */
+
+/* --- Hero Section (MODIFIED: Collapsed and Hidden) --- */
+/* The original hero-section is fully collapsed as it contained the large background image space. */
+.page-interactive .hero-section {
+    height: 0 !important; 
+    padding: 0 !important;
+    margin: 0 !important;
+    display: none !important; /* Ensure it is completely gone */
+}
+
+/* --- NEW Heading Section Styling --- */
+/* Assuming you wrap your headings (h1, p) in a new element like <div class="page-headings"> */
+.page-interactive .page-headings {
+    text-align: center; /* Center the text */
+    padding: 20px 20px 0; /* Add padding above the headings, zero at the bottom to bring containers closer */
+}
+
+/* Ensure the heading text styles are correct inside this new wrapper */
+.page-interactive .page-headings h1 {
+    font-size: 3rem;
+    color: #ff9f43; /* Orange */
+    margin-bottom: 5px;
+}
+
+.page-interactive .page-headings p {
+    color: #d65db1; /* Pink */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0; /* Remove space below the text */
+}
+
+/* --- Main Layout (MODIFIED: Adjusts margin to position containers just below the text) --- */
+.page-interactive .main-container {
+    max-width: 100%;
+    /* KEY CHANGE: Removed the negative top margin (-50px). */
+    /* Set a small top margin (10px) to space it just below the .page-headings content. */
+    margin:15px; 
+    padding: 0;
+    position: relative;
+}
+
+/* --- Interactive Two-Column Layout --- */
+.page-interactive .interactive-layout {
+    display: flex;
+    gap: 15px; /* Space between the left and right panels */
+}
+
+/* Sidebar for Buttons */
+.page-interactive .sidebar-panel {
+    flex-basis: 20%; /* Fixed size for the left panel */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: fit-content; /* Panel size adjusts to content */
+}
+
+/* Description Panel (Right Side) */
+.page-interactive .description-panel {
+    flex-basis: 50%; /* Takes the rest of the space */
+    padding: 25px;
+}
+.page-interactive .image-panel {
+    flex-basis: 30%; /* Takes the rest of the space */
+    padding: 25px;
+}
+
+/* --- Idea Button Styling --- */
+.page-interactive .idea-button {
+    width: 100%;
+    text-align: left;
+    background-color: #5c4488; /* Slightly different purple for the button */
+    color: #f0f0f0;
+    border: none;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    border-left: 5px solid transparent; /* Corrected to 5px for consistency */
+}
+
+.page-interactive .idea-button:hover {
+    background-color: #4b3575;
+}
+
+/* Active State for the Selected Button */
+.page-interactive .idea-button.active {
+    background-color: #4b3575;
+    font-weight: 600;
+    border-left: 5px solid #ff9f43; /* Highlight active button with orange accent */
+}
+
+/* Content Visibility */
+.page-interactive .hidden {
+    display: none !important;
+}
+
+/* Description Header */
+#description-header {
+    color: #d65db1; /* Pink header */
+    margin-bottom: 20px;
+}
+
+/* Style for individual description content */
+.page-interactive .description-content h3 {
+    color: #ff9f43; /* Orange sub-heading */
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+.page-interactive .description-content p {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .interactive-layout {
+        flex-direction: column; /* Stacks the panels vertically on small screens */
+    }
 }
