@@ -1,49 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Design - SAFIYAH</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dynamic Themed Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-interactive">
+
     <nav class="navbar">
         <div class="logo">City Design</div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Project</a></li>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="project.html">PROJECT</a></li>
             <li><a href="kusumitha.html">KUSUMITHA</a></li>
             <li><a href="safiyah.html">SAFIYAH</a></li>
             <li><a href="chetana.html">CHETANA</a></li>
-            <li><a href="suzan.html">SUZAN</a></li>
-            <li><a href="Collab.html">Collaboration</a></li>
+            <li><a href="suzn.html">SUZAN</a></li>
+            <li><a href="collab.html">COLLABS</a></li>
         </ul>
     </nav>
 
-    <section class="member-profile-section about-section">
-        <h1 class="section-title">SAFIYAH's Profile</h1>
-        <p class="section-intro"></p>
-        
-        <div class="team-container" style="margin-top: 40px;">
-            <div class="team-member" style="width: 100%; max-width: 600px;">
-                <h3 class="member-name">SAFIYAH</h3>
-                <h2 class="member-usn">01fe24bcs307</h2>
-                <p></p>
-                
-                <div class="member-skills" style="margin-top: 20px;">
-                    <h4> </h4>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <a 
-            </div>
+    <section class="page-headings">
+        <div class="hero-content">
+            <h1>Identified Business Ideas</h1>
         </div>
     </section>
 
-  
+    <section class="hero-section"></section>
+
+    <div class="mainlayout-container">
+        <div class="interactive-layout">
+            <div class="sidebar-panel card">
+                <button class="idea-button" data-idea="idea1">1.Grocery Store Inventory & Sales Management</button>
+                <button class="idea-button" data-idea="idea2">2. Healthcare Appointment Scheduling & Emergency Dispatch</button>
+                <button class="idea-button" data-idea="idea3">3. Restaurant Order & Delivery System</button>
+                <button class="idea-button" data-idea="idea4">4.Telecom fraud detection system</button>
+                <button class="idea-button" data-idea="idea5">5.Smart parking platform</button>
+            </div>
+
+            <div class="description-panel card">
+                <div id="idea1-desc" class="description-content">
+                    <h3>Grocery Store Inventory & Sales Management</h3>
+                    <p><p>
+    <strong>SDG Alignment:</strong><br/>
+    SDG 2 – Zero Hunger<br/>
+    SDG 12 – Responsible Consumption & Production<br/>
+    SDG 8 – Decent Work & Economic Growth<br/><br/>
+
+    <strong>Problem:</strong><br/>
+    Grocery stores face:<br/>
+    - Difficulty tracking product inventory efficiently<br/>
+    - Products expiring before being sold<br/>
+    - Overstocking or stockouts due to poor replenishment planning<br/>
+    - Long checkout queues affecting customer experience<br/>
+    - Need for dynamic product display sorted by price, rating, or expiry<br/><br/>
+
+    The system must:<br/>
+    - Track inventory in real-time<br/>
+    - Identify best-selling and soon-to-expire products<br/>
+    - Optimize stock arrangement<br/>
+    - Manage checkout lines efficiently<br/>
+    - Display products sorted by price, rating, or expiry<br/><br/>
+
+    <strong>Implementation Steps (ADS):</strong><br/>
+    <em>Product Catalog & Lookup:</em><br/>
+    Store all products, categories, and details (price, SKU, quantity, expiry) in a hash table for fast access.<br/><br/>
+
+    <em>Best-Selling & Soon-to-Expire Products Tracking:</em><br/>
+    Use heaps:<br/>
+    - Max-Heap for best-selling products<br/>
+    - Min-Heap for products nearing expiry<br/>
+    This helps dynamically identify which products to promote or monitor.<br/><br/>
+
+    <em>Shelf Arrangement & Product Display:</em><br/>
+    Sort products according to different criteria:<br/>
+    - Expiry Date (soon-to-expire first): QuickSort<br/>
+    - Price (low to high / high to low): MergeSort<br/>
+    - Customer Ratings (high to low): HeapSort<br/>
+    This ensures organized shelves and easier customer browsing.<br/><br/>
+
+    <em>Checkout Queue Management:</em><br/>
+    Use a queue (FIFO) to manage customers at checkout counters.<br/>
+    Ensures fair and orderly service.
+</p>
+</p>
+                </div>
+
+                <div id="idea2-desc" class="description-content hidden">
+                    <h3>Healthcare Appointment Scheduling & Emergency Dispatch</h3>
+                    <p><strong>SDG Alignment:</strong><br />
+                    SDG 3 – Good Health & Well-being<br />
+                    SDG 11 – Sustainable Cities & Communities<br /><br />
+
+                    <strong>Problem:</strong><br />
+                    Patients face long wait times, delayed ambulance response, and inefficient doctor appointment management. Hospitals need a system that:<br />
+                    - Prioritizes emergency patients<br />
+                    - Reduces travel time for ambulances<br />
+                    - Optimizes doctor schedules<br />
+                    - Provides fast access to patient records<br /><br />
+
+                    <strong>Implementation Steps (ADS):</strong><br />
+                    <em>City & Hospital Graph Representation:</em><br />
+                    Represent hospitals, clinics, and patient homes as nodes in a weighted graph.<br />
+                    Edges represent roads; weights store travel time between locations.<br /><br />
+
+                    <em>Patient Records Management:</em><br />
+                    Store all patient records, appointment history, and medical data in a hash table.<br />
+                    This allows O(1) access to patient information during scheduling and emergency handling.<br /><br />
+
+                    <em>Appointment Queue Management:</em><br />
+                    Use a priority queue (min-heap) to manage patient appointments.<br />
+                    Patients with urgent cases are given higher priority to reduce wait times.<br /><br />
+
+                    <em>Ambulance Route Optimization:</em><br />
+                    Use Dijkstra’s algorithm on the weighted graph to calculate the fastest path for ambulances.<br />
+                    Min-heap is used in Dijkstra to efficiently select the next node with minimum travel time.<br /><br />
+
+                    <em>Doctor Scheduling Optimization:</em><br />
+                    Apply sorting algorithms to arrange patient appointments by urgency and availability.<br />
+                    Use arrays or hash tables to track doctor availability and appointment slots.<br />
+                    This minimizes idle time for doctors and reduces patient wait times.<br /><br />
+
+                    <em>Emergency Handling & Updates:</em><br />
+                    Continuously update patient queues and ambulance routes based on new emergencies.<br />
+                    Use priority queues to dynamically reorder patients or ambulance dispatch as needed.</p>
+                </div>
+
+                <div id="idea3-desc" class="description-content hidden">
+                    <h3>Restaurant Order & Delivery System</h3>
+                    <p><p>
+    <strong>SDG Alignment:</strong><br/>
+    SDG 8 – Decent Work & Economic Growth<br/>
+    SDG 11 – Sustainable Cities & Communities<br/>
+    SDG 12 – Responsible Consumption & Production<br/><br/>
+
+    <strong>Problem:</strong><br/>
+    Restaurants face challenges such as:<br/>
+    - Managing multiple customer orders efficiently<br/>
+    - Ensuring fast and timely delivery<br/>
+    - Recommending popular or personalized dishes<br/>
+    - Tracking trending menu items and combos<br/>
+    - Handling order history for repeat customers<br/><br/>
+
+    The system must:<br/>
+    - Process orders in the order they are received<br/>
+    - Optimize delivery routes for multiple locations<br/>
+    - Track customer preferences and order history<br/>
+    - Suggest popular or recommended dishes dynamically<br/><br/>
+
+    <strong>Implementation Steps (ADS):</strong><br/>
+    <em>Order Management:</em><br/>
+    Use a queue (FIFO) to manage customer orders.<br/>
+    Ensures orders are processed in the order they are received.<br/><br/>
+
+    <em>Menu & Customer Preferences:</em><br/>
+    Store menu items, customer preferences, and past orders in hash tables for fast retrieval.<br/><br/>
+
+    <em>Trending Dishes & Popular Combos:</em><br/>
+    Use heaps to dynamically track best-selling or trending menu items.<br/><br/>
+
+    <em>Delivery Route Optimization:</em><br/>
+    Model delivery locations and routes as a weighted graph.<br/>
+    Apply Dijkstra’s algorithm to determine the fastest delivery paths.<br/><br/>
+
+    <em>Dish Recommendation:</em><br/>
+    Maintain a list of dishes with their ratings and frequency of orders.<br/>
+    Apply MergeSort to sort dishes by popularity or rating in descending order.<br/>
+    Suggest the top-N dishes to the customer based on sorted list.<br/>
+    Sorting ensures that highly rated and frequently ordered dishes are prioritized.
+</p>
+</p>
+                </div>
+
+                <div id="idea4-desc" class="description-content hidden">
+                    <h3>Construction Management</h3>
+                    <p></p>
+                </div>
+
+                <div id="idea6-desc" class="description-content hidden">
+                    <h3>Telecommunication Solutions</h3>
+                    <p></p>
+                </div>
+            </div>
+            <!-- Image panel removed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
