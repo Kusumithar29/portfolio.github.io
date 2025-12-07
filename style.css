@@ -17,13 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px auto;
     display: block;
 }
-<div class="project-image-container">
-    <!-- First Image -->
-    <img src="your-first-image.png" class="project-image">
+.image-below {
+    margin-top: 20px;  /* spacing between images */
+}
 
-    <!-- Second Image BELOW -->
-    <img src="your-second-image.png" class="project-image image-below">
-</div>
 
 
 
