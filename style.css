@@ -10,6 +10,14 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.idea-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin: 20px auto;
+    display: block;
+}
+
 
 body {
     /* Deep purple background to match the image theme */
@@ -31,6 +39,7 @@ body {
     border-bottom: 2px solid #d65db1; /* Pink accent line */
     backdrop-filter: blur(10px);
 }
+
 
 .logo {
     font-size: 1.2rem;
@@ -67,6 +76,21 @@ body {
     align-items: center;
     text-align: center;
 }
+.info-block {
+    margin-bottom: 20px;
+}
+
+.info-block h4 {
+    margin-bottom: 10px;
+    color: #ffab40;
+    font-weight: 600;
+}
+
+.info-block ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
 
 .page-team .hero-content h1 {
     font-size: 3rem;
