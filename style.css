@@ -10,33 +10,13 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.image-row img {
-    width: 280px;     /* perfect size */
-    height: auto;
+.idea-image img {
+    width: 100%;
+    max-width: 600px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    display: block;
 }
-
-.image-below {
-    margin-top: 20px;  /* spacing between images */
-}
-.image-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.image-row img {
-    width: 40%;  
-    max-width: 280px;   /* keeps them the same size as your screenshot */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-
-
 
 
 body {
