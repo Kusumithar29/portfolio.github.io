@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .image-row img {
     width: 20%;  
-    max-width: 480px;   /* keeps them the same size as your screenshot */
+    max-width: 280px;   /* keeps them the same size as your screenshot */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
