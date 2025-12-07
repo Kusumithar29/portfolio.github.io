@@ -41,52 +41,63 @@
             </div>
 
             <div class="description-panel card">
-                <div id="idea1-desc" class="description-content">
-                    <h3>Grocery Store Inventory & Sales Management</h3>
-                    <p><p>
-    <strong>SDG Alignment:</strong><br/>
-    SDG 2 – Zero Hunger<br/>
-    SDG 12 – Responsible Consumption & Production<br/>
-    SDG 8 – Decent Work & Economic Growth<br/><br/>
+                    <div id="idea1-desc" class="description-content">
+    <h3>Grocery Store Inventory & Sales Management</h3>
 
-    <strong>Problem:</strong><br/>
-    Grocery stores face:<br/>
-    - Difficulty tracking product inventory efficiently<br/>
-    - Products expiring before being sold<br/>
-    - Overstocking or stockouts due to poor replenishment planning<br/>
-    - Long checkout queues affecting customer experience<br/>
-    - Need for dynamic product display sorted by price, rating, or expiry<br/><br/>
+    <div class="info-block">
+        <h4>SDG Alignment</h4>
+        <ul>
+            <li>SDG 2 – Zero Hunger</li>
+            <li>SDG 12 – Responsible Consumption & Production</li>
+            <li>SDG 8 – Decent Work & Economic Growth</li>
+        </ul>
+    </div>
 
-    The system must:<br/>
-    - Track inventory in real-time<br/>
-    - Identify best-selling and soon-to-expire products<br/>
-    - Optimize stock arrangement<br/>
-    - Manage checkout lines efficiently<br/>
-    - Display products sorted by price, rating, or expiry<br/><br/>
+    <div class="info-block">
+        <h4>Problem</h4>
+        <ul>
+            <li>Difficulty tracking product inventory efficiently</li>
+            <li>Products expiring before being sold</li>
+            <li>Overstocking or stockouts due to poor planning</li>
+            <li>Long checkout queues affecting customer experience</li>
+            <li>Need for dynamic product sorting (price, rating, expiry)</li>
+        </ul>
+    </div>
 
-    <strong>Implementation Steps (ADS):</strong><br/>
-    <em>Product Catalog & Lookup:</em><br/>
-    Store all products, categories, and details (price, SKU, quantity, expiry) in a hash table for fast access.<br/><br/>
+    <div class="info-block">
+        <h4>System Requirements</h4>
+        <ul>
+            <li>Real-time inventory tracking</li>
+            <li>Identify best-selling & soon-to-expire products</li>
+            <li>Optimize shelf arrangement</li>
+            <li>Efficient checkout queue handling</li>
+            <li>Sorting: price, rating, expiry</li>
+        </ul>
+    </div>
 
-    <em>Best-Selling & Soon-to-Expire Products Tracking:</em><br/>
-    Use heaps:<br/>
-    - Max-Heap for best-selling products<br/>
-    - Min-Heap for products nearing expiry<br/>
-    This helps dynamically identify which products to promote or monitor.<br/><br/>
+    <div class="info-block">
+        <h4>Implementation Steps (ADS)</h4>
 
-    <em>Shelf Arrangement & Product Display:</em><br/>
-    Sort products according to different criteria:<br/>
-    - Expiry Date (soon-to-expire first): QuickSort<br/>
-    - Price (low to high / high to low): MergeSort<br/>
-    - Customer Ratings (high to low): HeapSort<br/>
-    This ensures organized shelves and easier customer browsing.<br/><br/>
+        <strong>Product Catalog & Lookup</strong>
+        <p>Use a hash table to store product info (SKU, price, quantity, expiry).</p>
 
-    <em>Checkout Queue Management:</em><br/>
-    Use a queue (FIFO) to manage customers at checkout counters.<br/>
-    Ensures fair and orderly service.
-</p>
-</p>
-                </div>
+        <strong>Best-Selling & Expiry Tracking</strong>
+        <ul>
+            <li>Max-Heap → Best-selling items</li>
+            <li>Min-Heap → Soon-to-expire items</li>
+        </ul>
+
+        <strong>Shelf Arrangement & Sorting</strong>
+        <ul>
+            <li>Expiry: QuickSort</li>
+            <li>Price: MergeSort</li>
+            <li>Ratings: HeapSort</li>
+        </ul>
+
+        <strong>Checkout Queue Management</strong>
+        <p>Use FIFO Queue to handle customer checkout flow.</p>
+    </div>
+</div>
 
                 <div id="idea2-desc" class="description-content hidden">
                     <h3>Healthcare Appointment Scheduling & Emergency Dispatch</h3>
@@ -184,7 +195,10 @@
                     <p></p>
                 </div>
             </div>
-            <!-- Image panel removed -->
+            <div class="idea-image">
+    <img src="images/grocery-people.png" alt="People buying grocery">
+</div>
+
         </div>
     </div>
 
