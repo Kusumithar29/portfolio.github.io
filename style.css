@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 .idea-image img {
-    width: 100%;
+    width: 70%;
     max-width: 600px;
     border-radius: 12px;
     margin: 20px auto;
