@@ -10,6 +10,30 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.description-panel {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Set description-content to flex-basis to share width */
+.description-content {
+  flex-basis: 60%;
+}
+
+/* Image div taking the rest */
+.idea-image {
+  flex-basis: 40%;
+}
+
+/* Style the images inside */
+.idea-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: block;
+}
+
 .idea-image img {
     width: 100%;
     max-width: 600px;
@@ -379,7 +403,7 @@ body {
 .page-interactive .page-headings h1 {
     font-size: 3rem;
     color: #ff9f43; /* Orange */
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .page-interactive .page-headings p {
@@ -387,6 +411,33 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0; /* Remove space below the text */
+}
+
+.page-interactive .ads-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #3b185f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.page-interactive .ads-table th {
+    background: #ff69b4;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.page-interactive .ads-table td {
+    padding: 12px;
+    color: #f4eaff;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.page-interactive .ads-table tr:hover {
+    background: rgba(255,255,255,0.1);
 }
 
 /* --- Main Layout (MODIFIED: Adjusts margin to position containers just below the text) --- */
@@ -416,13 +467,11 @@ body {
 
 /* Description Panel (Right Side) */
 .page-interactive .description-panel {
-    flex-basis: 50%; /* Takes the rest of the space */
+    flex-basis: 80%; /* Takes the rest of the space */
     padding: 25px;
 }
-.page-interactive .image-panel {
-    flex-basis: 30%; /* Takes the rest of the space */
-    padding: 25px;
-}
+
+
 
 /* --- Idea Button Styling --- */
 .page-interactive .idea-button {
@@ -480,3 +529,79 @@ body {
         flex-direction: column; /* Stacks the panels vertically on small screens */
     }
 }
+
+
+
+.description-panel {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.description-content {
+  flex-basis: 60%;
+}
+
+.idea-image {
+  flex-basis: 40%;
+}
+
+.idea-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Hide elements with .hidden */
+.hidden {
+  display: none !important;
+}
+
+/* Sidebar buttons styling */
+.idea-button {
+  width: 100%;
+  text-align: left;
+  background-color: #5c4488;
+  color: #f0f0f0;
+  border: none;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border-left: 5px solid transparent;
+}
+
+.idea-button:hover {
+  background-color: #4b3575;
+}
+
+.idea-button.active {
+  background-color: #4b3575;
+  font-weight: 600;
+  border-left: 5px solid #ff9f43;
+}
+
+/* Body & typography */
+body {
+  background-color: #2d1b4e;
+  color: #f0f0f0;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table-btn {
+    background-color: #5c4488;
+    color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    cursor: pointer;
+}
+.table-btn:hover {
+    background-color: #4b3575;
+}
+
