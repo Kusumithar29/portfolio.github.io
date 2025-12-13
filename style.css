@@ -537,11 +537,13 @@ body {
 .page-interactive .description-content h3 {
     color: #ff9f43; /* Orange sub-heading */
     margin-bottom: 10px;
+    flex-basis: 100%;
     text-align: left; 
 }
 
 .page-interactive .description-content p {
     margin-bottom: 15px;
+    flex-basis: 100%;
     color: #e0e0e0;
 }
 
@@ -561,7 +563,7 @@ body {
 }
 
 .description-content {
-  flex-basis: 100%;
+  flex-basis: 60%;
 }
 
 .idea-image {
