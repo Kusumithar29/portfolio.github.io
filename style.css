@@ -10,38 +10,6 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.description-panel {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-/* Set description-content to flex-basis to share width */
-.description-content {
-  flex-basis: 60%;
-}
-
-/* Image div taking the rest */
-.idea-image {
-  flex-basis: 40%;
-}
-
-/* Style the images inside */
-.idea-image img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.idea-image img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 12px;
-    margin: 20px auto;
-    display: block;
-}
-
 
 body {
     /* Deep purple background to match the image theme */
@@ -63,7 +31,6 @@ body {
     border-bottom: 2px solid #d65db1; /* Pink accent line */
     backdrop-filter: blur(10px);
 }
-
 
 .logo {
     font-size: 1.2rem;
@@ -100,21 +67,6 @@ body {
     align-items: center;
     text-align: center;
 }
-.info-block {
-    margin-bottom: 20px;
-}
-
-.info-block h4 {
-    margin-bottom: 10px;
-    color: #ffab40;
-    font-weight: 600;
-}
-
-.info-block ul {
-    margin-left: 20px;
-    line-height: 1.6;
-}
-
 
 .page-team .hero-content h1 {
     font-size: 3rem;
@@ -191,13 +143,24 @@ body {
     border: 1px solid #d65db1; /* Pink border accent */
     transition: all 0.3s ease;
 }
+.btn {
+    display: inline-block;
+    background-color: #333; /* Dark background like GitHub */
+    color: white;
+    gap: 25px; 
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #d65db1; /* Pink border accent */
+    transition: all 0.3s ease;
+}
 
-.github-btn:hover {
+.btn:hover {
     background-color: #d65db1; /* Turns pink on hover */
     color: white;
     transform: scale(1.05);
 }
-
 /* Image Styling */
 .project-image-container {
     text-align: center; /* Centers the image */
@@ -422,7 +385,7 @@ body {
 
 /* Ensure the heading text styles are correct inside this new wrapper */
 .page-interactive .page-headings h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ff9f43; /* Orange */
     margin-bottom: 0;
 }
@@ -432,34 +395,6 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0; /* Remove space below the text */
-}
-
-.page-interactive .ads-table {
-    max-width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-    background: #3b185f;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.page-interactive .ads-table th {
-    background: #ff69b4;
-    color: white;
-    padding: 12px;
-    text-align: left;
-    font-size: 16px;
-}
-
-.page-interactive .ads-table td {
-    padding: 12px;
-    color: #f4eaff;
-    font-size: 15px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.page-interactive .ads-table tr:hover {
-    background: rgba(255,255,255,0.1);
 }
 
 /* --- Main Layout (MODIFIED: Adjusts margin to position containers just below the text) --- */
@@ -492,9 +427,6 @@ body {
     flex-basis: 80%; /* Takes the rest of the space */
     padding: 25px;
 }
-
-
-
 /* --- Idea Button Styling --- */
 .page-interactive .idea-button {
     width: 100%;
@@ -526,7 +458,27 @@ body {
 .page-interactive .hidden {
     display: none !important;
 }
+.page-interactive.code-btn {
+    width: 100%;
+    display: flex;
+    gap: 25px;      /* Increased space between buttons */
+    padding: 30px;
+    display: inline-block;
+    background-color: #333; /* Dark background like GitHub */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #d65db1; /* Pink border accent */
+    transition: all 0.3s ease;
+}
 
+.page-interactive.code-btn:hover {
+    background-color: #d65db1; /* Turns pink on hover */
+    color: white;
+    transform: scale(1.05);
+}
 /* Description Header */
 #description-header {
     color: #d65db1; /* Pink header */
@@ -536,13 +488,42 @@ body {
 /* Style for individual description content */
 .page-interactive .description-content h3 {
     color: #ff9f43; /* Orange sub-heading */
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-align: left; 
 }
 
-.page-interactive .description-content p {
-    margin-bottom: 15px;
-    color: #e0e0e0;
+.page-interactive .table-container h2 {
+    color: #ffb3ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-interactive .ads-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #3b185f;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.page-interactive .ads-table th {
+    background: #ff69b4;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.page-interactive .ads-table td {
+    padding: 12px;
+    color: #f4eaff;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.page-interactive .ads-table tr:hover {
+    background: rgba(255,255,255,0.1);
 }
 
 /* --- Mobile Responsiveness --- */
