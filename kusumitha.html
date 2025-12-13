@@ -3,46 +3,612 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Design - KUSUMITHA</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Dynamic Themed Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
-    <nav class="navbar">
+<body class="page-interactive">
+
+     <nav class="navbar">
         <div class="logo">City Design</div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Project</a></li>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="project.html">PROJECT</a></li>
             <li><a href="kusumitha.html">KUSUMITHA</a></li>
             <li><a href="safiyah.html">SAFIYAH</a></li>
             <li><a href="chetana.html">CHETANA</a></li>
-            <li><a href="suzan.html">SUZAN</a></li>
-            <li><a href="Collab.html">Collaboration</a></li>
+            <li><a href="suzn.html">SUZAN</a></li>
+            <li><a href="collab.html">COLLABS</a></li>
         </ul>
     </nav>
 
-    <section class="member-profile-section about-section">
-        <h1 class="section-title">KUSUMITHA's Profile</h1>
-        <p class="section-intro"></p>
-        
-        <div class="team-container" style="margin-top: 40px;">
-            <div class="team-member" style="width: 100%; max-width: 600px;">
-                <h3 class="member-name">KUSUMITHA</h3>
-                <p class="member-usn">01fe24bcs287</p>
-                <p></p>
-                
-                <div class="member-skills" style="margin-top: 20px;">
-                    <h4></h4>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <a </a>
-            </div>
+    <section class="page-headings">
+        <div class="hero-content">
+            <h1>Identified Business Ideas</h1>
         </div>
     </section>
 
+    <section class="hero-section"></section> 
+
+    <div class="mainlayout-container">
+        <div class="interactive-layout">
+            <div class="sidebar-panel card">
+
+                <button class="idea-button" data-idea="idea1">1.E-Governance services</button>
+                <button class="idea-button" data-idea="idea2">2.Smart bus tracking platform</button>
+                <button class="idea-button" data-idea="idea3">3.Home energy monitoring system</button>
+                <button class="idea-button" data-idea="idea4">4.Telecom fraud detection system</button>
+                <button class="idea-button" data-idea="idea5">5.Smart parking platform</button>
+            </div>
+
+            <div class="description-panel card">
+                <div id="idea1-desc" class="description-content">
+                    <h1>E-Governance Services</h1>
+                    <p>A Unified digital platform where citizens can access all major government services instead of using multiple separate portals or going to service centres physically.
+                    
+                    <h3>What all does it include</h3>
+                    <ul>
+                        <li>Aadhaar and PAN related services</li>
+                        <li>Birth, death, caste, income certificates</li>
+                        <li>Income and Property tax</li>
+                        <li>Pension applications</li>
+                        <li>Ration  and health card details</li>
+                        <li>Notifications of latest government services</li>
+                        <li>instant download</li>
+                        <li>Tracking application status</li>
+                        <li>Stores data securely and efficiently</li>
+                        <li>Provides security pin to access the app for each individual user.</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>Manual Paper-Based Processes</li>
+                        <li>Integration Challenges Between Departments</li>
+                        <li>Delayed Public Service Delivery</li>
+                        <li>citizens to roaming to offices for services</li>
+                        <li>Slow & Inefficient Government Services</li>
+                        <li>Difficulty Accessing Services in Rural Areas</li>
+                    </ul>
+                    </p>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>Efficieny</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="citizen login" target="_self">Citizen login and Authentication</a></td>
+                <td>Hashing</td>
+                <td>1. Store passwords using salted hashing.<br>
+2. On login, hash the input password and compare with stored hash.<br>
+3. Maintain session tokens in a hash table for instant validation.<br>
+4. Use rate limiting to prevent brute-force attacks.</td>
+                <td>O(1) average</td>
+                    
+            </tr>
+
+            <tr>
+                <td><a href="Document Storage & Retrieval" target="_self">Document Storage & Retrieval</a></td>
+                <td>Trie + Hash Table+KMP</td>
+                <td>1. Store document titles/keywords in a Trie for prefix search.<br>
+2. Maintain metadata (FileID → Storage path) in hash table.<br>
+3. Fetch file path in O(1) using hash key.<br>
+4. Return results instantly for search boxes.<br>
+5.Use KMPto search inside document titles or descriptions.</td>
+                <td>trie-O(1) average<br>
+                    Hash table-O(1) average<br>
+                    KMP-O(n + m)average</td>
+            </tr>
+
+            <tr>
+                <td><a href="Real-Time Notifications" target="_self">Real-Time Notifications,Alerts and search</a></td>
+                <td>Priority Queue (Heap)+Brute Force Search+Heap Sort</td>
+                <td>1. Store alerts with severity level & timestamp.<br>
+2. Reinsert when escalated.<br>
+3.Use Brute Force String Search for substring search inside scheme descriptions.<br>
+4. Display auto-complete results.<br>
+5.Use Heap Sort(min by time, max by severity) to display sorted notification lists to admins.</td>
+<td>PRiority Queue-O(log n) average
+Brute Force String Search-O(n·m) average<br>
+Heap Sort-O(n log n)average</td>
+            </tr>
+            
+             <tr>
+                <td><a href="Service Request Prioritization" target="_self">Service Request Prioritization</a></td>
+                <td>Heap (Min/Max Priority Queue)+Heap Sort</td>
+                <td>1. Assign severity to each request.<br>
+2. Push into Min-Heap/Max-Heap.<br>
+3. Automatically sorts using heap properties.<br>
+4. Use Heap Sort when exporting sorted list of high-priority services.</td>
+                <td>Heap-O(log n) average<br>
+                Heap Sort-O(n log n)average</td>
+                    
+            </tr>
+
+            <tr>
+                <td><a href="Document Version Update" target="_self">Document Version Update</a></td>
+                <td>Trie + AVL Tree+Binary search</td>
+                <td>1. Store document names in Trie to allow quick prefix search.<br>
+                2.Binary Search enables quick lookups.<br> 
+3. For each document, maintain versions inside AVL tree sorted by version number or timestamp.<br>
+4. When user updates, insert new version into AVL tree.<br>
+5. Keep only last N versions by deleting old nodes.</td>
+                  <td>trie-O(1) average<br>
+                  Binary Search-O(log n) average<br>
+                    AVL Tree-O(log n) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="Application Status Tracking" target="_self">Application Status Tracking</a></td>
+                <td>Hash Table</td>
+                <td>1. Store each application with key = AppID.<br>
+2. Maintain fields: current stage, dept, timestamps.<br>
+3. On user request → fetch AppID in O(1).<br>
+4. Show real-time stage (submitted → verified → approved).</td>
+<td>Hash table-O(1) average</td>
+            </tr>
+
+            
+            <tr>
+                <td><a href="Application Submission" target="_self">Application Submission</a></td>
+                <td>Queue + Hash Table</td>
+                <td>1. Store form data temporarily in hash table using AppID.<br>
+2. Add AppID to processing queue.<br>
+3. Background workers process applications FIFO.<br>
+4. Update application status in hash table (verified, pending, rejected).<br>
+5. Notify user.</td>
+ <td>Queue-O(1) average<br>
+   Hash table-O(1) average</td>
+            </tr>
+           
+            <tr>
+                <td><a href="Document Download" target="_self">Document Download</a></td>
+                <td>Hash Table + Cache (Queue)+Merge Sort</td>
+                <td>1. Maintain download/update logs in list.<br>
+2. Store metadata in hash table.<br>
+3. Sort logs by time/user using Merge Sort.</td>
+<td>Queue-O(1) average<br>
+   Hash table-O(1) average<br>
+  Merge Sort-O(n log n) average</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>**please click on the features to get their code**</strong></p>
+</div>    
+        
+                <div id="idea2-desc" class="description-content hidden">
+                    <h1>Smart bus tracking platform</h1>
+                    <p>A technology platform that helps passengers, bus operators, and city transport authorities track buses in real time and accurately predict arrival times
+                    <h3>What all does it include</h3>
+                    <ul>
+                        <li>Shows real-time location of each bus on a map</li>
+                        <li>Provides delay alerts, route changes, breakdown alerts</li>
+                        <li>Predicts distance and estimated time of arrival (ETA) at each stop to reach the destination</li>
+                        <li>Fare estimation</li>
+                        <li>Displaying and alerts the next or nearby stop</li>
+                        <li>Alerts for bus nearing stop</li>
+                        <li>Ticket booking integration</li>
+                    </ul>
+                     <h3>problems faced in real-time before</h3>
+                    <ul>
+                      <li>Passengers have no idea when the bus will arrive — causing long waits, missed buses or crowding.</li>
+                      <li>Poor route planning causes higher fuel consumption</li>
+                        <li>No centralized platform to tell passengers:Delay,Route change,Cancelled trip</li>
+                        <li>Drivers accidentally take wrong routes or intentional shortcuts.</li>
+                        <li>People wait for several minutes under sun/rain because they don’t know bus timing.</li>
+                    </ul>
+                     <h3>Where it can be used</h3>
+                    <ul>
+                      <li>School buses,City bus transport,Metro feeder buses</li>
+                        <li>Private or Corporate transport services</li>
+                    </ul>
+                    </p>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="Live Bus GPS Tracking" target="_self">Live Bus GPS Tracking</a></td>
+                <td>Hash Table+Array/List</td>
+                <td>1. Create a hash table mapping: BusID → Latest GPS coordinates.<br>
+                    2. Each bus sends location every X seconds.<br>
+                    3. Update hash table entry in O(1).<br>
+                    4. Use a dynamic list/array to maintain recent locations</td>
+               <td>Hash Table-O(1) average<br>
+                   Array-O(1) average</td>
+                    
+            </tr>
+
+            <tr>
+                <td><a href="Real-Time ETA" target="_self">Real-Time ETA Prediction</a></td>
+                <td>Heap (Priority Queue),Dijkstra</td>
+                <td>1. Maintain live bus speed & traffic data.<br>
+2. For each bus, apply Dijkstra with min-heap to compute shortest-time path from current stop → target stop.<br>
+3. Combine with real-time traffic & historic timings (lookup table).<br>
+4. Continuously recalculate ETA on each GPS update.</td>
+                <td>Heap-O(log n) average<br>
+                Dijkstra-O(E log V)</td>
+            </tr>
+
+            <tr>
+                <td><a href="Route Mapping" target="_self">Route Mapping</a></td>
+                <td>Graph (Adjacency List)BFS / Dijkstra</td>
+                <td>1. Represent entire city route network as a graph: stops = nodes, roads = edges.<br>
+2. Store graph using adjacency lists for memory efficiency.<br>
+3. Run BFS for shortest-hop paths (simple routes).<br>
+4. Run Dijkstra to compute shortest distance/time between stops.<br>
+5. Used during route planning & ETA prediction.</td>
+<td>BFS-O(V + E)<br>
+                Dijkstra-O(E log V)</td>
+            </tr>
+  <tr>
+                <td><a href="Mapping Nearest Bus" target="_self">Mapping Nearest Bus to a Stop</a></td>
+                <td>Binary Search Tree(BST)</td>
+                <td>1. Maintain sorted distances of buses from stop.<br>
+2. Query nearest bus in O(log n).<br>
+3. Update tree on each GPS refresh.</td>
+<td>Binary Search Tree-O(log n) average)</td>
+            </tr>
+            
+            <tr>
+                <td><a href="Shortest Path" target="_self">Shortest Path & Deviation Detection</a></td>
+                <td>Graph (Adjacency List),Dijkstra,Hash Table + Lists</td>
+                <td>1. Use adjacency-list graph to store entire bus route network.<br>
+2. Run Dijkstra to compute shortest expected path between stops for each route.<br>
+3. Store computed path in list for quick reference.<br>
+4. Maintain hash table: BusID → CurrentPathProgress.<br>
+5. Compare live GPS against expected path list.<br>
+6. Flag deviation if bus position is outside allowed nodes/edges.</td>
+<td>BFS-O(V + E)<br>
+                Dijkstra-O(E log V)<br>
+                Hash Table-O(1) average<br>
+                   list-O(1) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="Live Updates to App" target="_self">Live Updates to App</a></td>
+                <td>Hash Table,Queue</td>
+                <td>1. Store latest bus data (location, speed, ETA) in hash table for instant read by API.<br>
+2. New updates from buses are pushed into an event queue.<br>
+3. Notification worker dequeues events and pushes updates to users via WebSockets/MQTT.<br>
+4. Ensures app always receives the freshest data.</td>
+  <td>Hash Table-O(1) average<br>
+                   Queue-O(1) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="Traffic Delay Estimation" target="_self">Traffic Delay Estimation</a></td>
+                <td>Sliding Window (Concept),Heap (Min Heap),Lookup Table</td>
+                <td>1. Maintain sliding window of recent speed readings per road segment.<br>
+2. Compute average speed and compare with normal-speed lookup table.<br>
+3. If slowdown detected, push a delay event into min-heap ordered by severity/time.<br>
+4. Update ETA engine with delay factor.<br>
+5. Store typical travel times in lookup table for quick comparison.</td>
+<td>Sliding Window-O(1)<br>
+    Heap-O(log n)<br>
+       lookup table-O(n)</td>
+            </tr>
+
+            <tr>
+                <td><a href="breakdown or fault alerts" target="_self">Breakdown / Fault Alerts</a></td>
+                <td>Priority Queue (Heap),Hash Table</td>
+                <td>1. Store bus health metrics (engine temp, battery, fuel) in hash table.<br>
+2. If any sensor reports abnormal value, create an alert event with severity.<br>
+3. Push events into a max-priority heap (higher severity = higher priority).<br>
+4. Pop critical events and notify control room/app instantly.<br>
+5. Mark bus as "Faulted" in hash table for dispatching a backup vehicle.</td>
+<td>Hash Table-O(1) average<br>
+                   Priority Queue-O(log n)average</td>
+            </tr>
+            <tr>
+                <td><a href="Search Buses" target="_self">Searching Buses, Routes, or Locations</a></td>
+                <td>Boyer–Moore Algorithm</td>
+                <td>1. Apply Boyer-Moore for fast pattern matching in large stop lists.</td>
+               <td>O(n/m)average</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>**please click on the features to get their code**</strong></p>
+        </div>
+                
+                <div id="idea3-desc" class="description-content hidden">
+                    <h1>Home energy monitoring system</h1>
+                    <p>A system that helps households track electricity usage in real time, identify wastage, reduce bills, and monitor appliance-level consumption
+                    <h3>What all does it include</h3>
+                      <ul>
+                        <li>Shows Real-time energy use</li>
+                        <li>Provides Per-appliance consumption</li>
+                        <li>identifies and alerts High-consuming devices</li>
+                        <li>identifies Wastage during night or idle hours</li>
+                        <li>sends live power usage data to the app every few seconds/minutes</li>
+                        <li>Monthly Bill estimation</li>
+                        <li>Maintains the history of consumption upto an year</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>Manual electricity tracking is impossible</li>
+                        <li>Hidden energy wastage</li>
+                        <li>High electricity bills with no clarity</li>
+                        <li>No prediction of future electricity bill</li>
+                    </ul>
+                    </p>
+                    </p>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="Energy Consumption Tracking" target="_self">Energy Consumption Tracking</a></td>
+                <td>Hash Table+Array/List+Heap Sort</td>
+                <td>1. Maintain hash table: ApplianceID → Latest consumption value.<br>
+2. Store time series readings in arrays/lists per appliance.<br>
+3. Update hash table in O(1) whenever new sensor data arrives.<br>
+4. Use array/list for plotting historical usage trends.<br>
+5.Heapify after each extraction and Produces sorted list.</td>
+                 <td>Hash Table-O(1) average<br>
+                   Array-O(1) average<br>
+                   Heap Sort-O(n log n)average</td>
+                    
+            </tr>
+
+            <tr>
+                <td><a href="Appliance Usage Patterns" target="_self">Appliance Usage Patterns & Analytics</a></td>
+                <td>Array + Hash Table</td>
+                <td>1. Store historical daily/hourly usage per appliance in arrays.<br>
+2. Hash table maps ApplianceID → Usage statistics.<br>
+3. Compare current usage against historical averages for anomaly detection.<br>
+4. Precompute totals using lookup tables for faster reporting.</td>
+ <td>Hash Table-O(1) average<br>
+                   Array-O(1) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="Energy Cost Prediction" target="_self">Energy Cost Prediction</a></td>
+                <td>Lookup Table + Array</td>
+                <td>1. Store tariff slabs, peak/off-peak rates in a lookup table.<br>
+2. Calculate estimated daily/weekly/monthly costs using appliance energy data in arrays.<br>
+3. Fetch rate from lookup table for O(1) computation.</td>
+ <td>Array-O(1) average<br>
+       lookup table-O(n)</td>
+            </tr>
+            
+             <tr>
+                <td><a href="Alert on Overconsumption" target="_self">Alert on Overconsumption</a></td>
+                <td>Sliding Window + Queue</td>
+                <td>1. Maintain recent N energy readings for each appliance in a sliding window.<br>
+2. Compute average or threshold exceedance.<br>
+3. Queue alerts for appliances exceeding limits.<br>
+4. Trigger notifications to user/app.</td>
+                <td>Sliding Window-O(1)<br>
+             Queue-O(1) average</td>
+                    
+            </tr>
+        </tbody>
+        </table>
+        <p><strong>**please click on the features to get their code**</strong></p>
+                </div>
+
+                <div id="idea4-desc" class="description-content hidden">
+                    <h1>Telecom fraud detection system</h1>
+                    <p>A unified platform that monitors subscriber/account signals, call/SMS behavior, and KYC/activity patterns to detect and block/flag.
+                    <h3>What all does it include</h3>
+                      <ul>
+                        <li>Detects unauthorized SIM replacement attempts by monitoring location changes,login attempts,SIM change requests and Device change immediately after SIM swap</li>
+                        <li>Identifies identity fraud during customer onboarding by Duplicate KYC documents,Geolocation mismatch,Suspicious reseller or KYC agent patterns</li>
+                        <li>detect malicious callers by identifing Very high call volume in short time (spam),Calls to random numbers,Repeated international scam attempts,Reported numbers from crowdsource data</li>
+                        <li>Notify user & operator,Auto-block number, restrict outgoing calls, alert regulators,Block onboarding,flag KYC agent,temporary account lock</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>SIM Swap Fraud Problems</li>
+                        <li>Fake KYC Fraud Problems</li>
+                        <li>Spam / Robocalls / Scam Calls Problems</li>
+                        <li>Financial fraud fear and losses</li>
+                    </ul>
+                    </p>
+                    </p>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="SIM Swap Detection" target="_self">SIM Swap Detection</a></td>
+                <td>Hash Table + Sliding Window</td>
+                <td>1. Maintain hash table: PhoneNumber → Last SIM change timestamp & deviceID.<br>
+2. On SIM change request, check if previous change was within a short window (e.g., 24–48 hours).<br>
+3. Use sliding window to monitor frequency of SIM swaps across all numbers.<br>
+4. Flag suspicious activity and alert security team.</td>
+               <td>Sliding Window-O(1)<br>
+             Hash Table-O(1) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="spam call detection" target="_self">Spam / Fraudulent Call Detection</a></td>
+                <td>Graph + BFS / Dijkstra + Sliding Window</td>
+                <td>1. Represent calls as a graph: nodes = phone numbers, edges = calls.<br>
+2. Use BFS to detect call loops or clusters of spam calls.<br>
+3. Apply sliding window on call frequency per number to detect abnormal bursts.<br>
+4. Use Dijkstra if weighted edges represent risk scores (call frequency, duration).</td>
+<td>Sliding Window-O(1)<br>
+             Dijkstra-O(E log V)<br>
+             BFS-O(V + E)</td>
+            </tr>
+
+            <tr>
+                <td><a href="Fake KYC Detection" target="_self">Fake KYC Detection</a></td>
+                <td>Trie + Hash Table + BFS</td>
+                <td>1. Store customer names & documents in Trie for fast prefix & duplicate search.<br>
+2. Hash Table: DocID → CustomerID to quickly detect reused or duplicate documents.<br>
+3. BFS on customer network graph to detect overlapping connections between suspicious accounts.<br>
+4. Flag anomalies if multiple accounts share documents or personal info.</td>
+<td>Hash Table-O(1) average<br>
+  BFS-O(V + E)<br>
+  Trie-O(L)</td>
+            </tr>
+            
+             <tr>
+                <td><a href="Alerts & Notification System" target="_self">Alerts & Notification System</a></td>
+                <td>Priority Queue (Heap)+Rabin Karp</td>
+                <td>1. Maintain alert events in a min/max heap: severity + timestamp.<br>
+2. Pop highest priority alerts to notify admins/security.<br>
+3. Reinsert for unresolved critical alerts.<br>
+4.Rabin–Karp: Use rolling hash to match substrings quickly.</td>
+                <td>Heap (Priority Queue)-O(log n)<br>
+                Rabin Karp-O(n + m) average</td>
+                    
+            </tr>
+
+            <tr>
+                <td><a href="Multi-account detection" target="_self">Multi-account / Network Fraud Detection</a></td>
+                <td>Graph + BFS + Heap</td>
+                <td>1. Build network graph: nodes = accounts, edges = shared phone numbers, devices, or IDs.<br>
+2. Use BFS to explore clusters of suspicious accounts.<br>
+3. Use Heap (priority queue) to rank high-risk accounts based on combined risk score.</td>
+<td>Adjacency List-O(V + E)<br>
+  BFS-O(V + E)<br>
+  Heap-O(log n)</td>
+            </tr>
+        
+            <tr>
+                <td><a href="Messaging Spam Detection" target="_self">SMS / Messaging Spam Detection</a></td>
+                <td>Trie + Hash Table+Rabin–Karp</td>
+                <td>1. Store keywords/patterns in Trie for fast search.<br><br>
+2. Maintain hash table: SenderNumber → message count/time window.<br>
+3. Flag senders exceeding threshold for repeated spam messages.<br>
+4.Rabin–Karp: Use rolling hash to match substrings quickly.</td>
+<td>Trie-O(L)<br>
+Hash Table-O(1) average<br>
+Rabin Karp-O(n + m) average</td>
+            </tr>
+
+        </tbody>
+      </table>
+      <p><strong>**please click on the features to get their code**</strong></p>
+                </div>
+                
+                <div id="idea5-desc" class="description-content hidden">
+                    <h1>Smart parking platform</h1>
+                    <p>A smart parking system to detect empty parking slots and guide users to them in real time.</p>
+                    <h3>What all does it include</h3>
+                    <ul>
+                        <li>Shows Real-time availability on the app</li>
+                        <li>Provides Parking duration and Then accordingly estimates cost</li>
+                        <li>displays Slot status (free/occupied)</li>
+                        <li>Overstay / Illegal Parking Detection</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>Difficulty Finding Available Parking Spots</li>
+                        <li>Illegal Parking & Road Blockage</li>
+                        <li>No Digital Payment or Automation</li>
+                        <li>Lack of Security</li>
+                    </ul>
+                     <h3>Where it can be used</h3>
+                    <ul>
+                      <li>Airport,railway station and Mall parking</li>
+                        <li>Smart city parking for public,residential and tech parks areas</li>
+                    </ul>
+                     </p>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="Parking Slot Availability" target="_self">Parking Slot Availability</a></td>
+                <td>Hash Table</td>
+                <td>1. Map: SlotID → Status (Free/Occupied).<br>
+2. Update status in O(1) whenever a sensor sends data.<br>
+3. Store vehicle info (vehicle no., time-in) in hash entry.<br>
+4. Used by mobile app to show live slot availability.</td>
+                <td>Hash Table-O(1) average</td>
+                    
+            </tr>
+
+            <tr>
+                <td><a href="Vehicle Entry or exit" target="_self">Vehicle Entry / Exit Processing</a></td>
+                <td>Queue+array+Insertion Sort</td>
+                <td>1. Maintain entry/exit request queue during peak hours.<br>
+2. Dequeue requests sequentially to avoid congestion<br>
+3. Update slot availability after each dequeue.<br>
+4. Store historical logs in array/list.<br>
+5. Insert new arriving vehicle into sorted list and Keeps list sorted in near O(n).</td>
+<td>Queue-O(1) average
+Array-Array-O(1) average<br>
+Insertion Sort-O(n²)average</td>
+            </tr>
+
+            <tr>
+                <td><a href="Payment Billing & Duration Calculation" target="_self">Payment Billing & Duration Calculation</a></td>
+                <td>Hash Table + Lookup Table</td>
+                <td>1. Retrieve time-in/time-out using hash table.<br>
+2. Compute duration instantly.<br>
+3. Fetch rate from lookup table.<br>
+4. Auto-generate billclass=""</td>
+<td>Hash Table-O(1) average<br>
+lookup table-O(n)</td>
+            </tr>
+            
+             <tr>
+                <td><a href="Illegal Parking Detectio" target="_self">Overstay / Illegal Parking Detection</a></td>
+                <td>Hash Table + Timers (Lists)</td>
+                <td>1. Maintain time-in in hash entry for each occupied slot.<br>
+2. Continuously check elapsed time.<br>
+3. If > allowed duration, flag slot/vehicle.<br>
+4. Trigger fine notification.</td>
+                <td>Hash Table-O(1) average<br>
+                lists-O(1) average</td>
+                    
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>**please click on the features to get their code**</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
