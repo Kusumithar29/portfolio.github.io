@@ -435,7 +435,7 @@ body {
 }
 
 .page-interactive .ads-table {
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     background: #3b185f;
     border-radius: 10px;
