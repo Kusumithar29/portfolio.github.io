@@ -391,7 +391,28 @@ body {
     margin: 0 !important;
     display: none !important; /* Ensure it is completely gone */
 }
-
+.ads-table a {
+    /* Sets the default link color to WHITE, blending with the rest of the text */
+    color: white; 
+    
+    /* Removes the default underline from the link */
+    text-decoration: none; 
+}
+.ads-table a:hover {
+    /* Changes the text color to BLUE when the cursor is brought over it */
+    color: #4DB8FF; 
+    
+    /* Adds the underline back for emphasis */
+    text-decoration: underline; 
+    
+    /* Ensures the cursor changes to a pointer to confirm clickability */
+    cursor: pointer;
+}
+/* 3. General Table Text Color (Ensures USNs and Header match) */
+.ads-table {
+    /* Ensures all other text in the table defaults to white */
+    color: white; 
+}
 /* --- NEW Heading Section Styling --- */
 /* Assuming you wrap your headings (h1, p) in a new element like <div class="page-headings"> */
 .page-interactive .page-headings {
