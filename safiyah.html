@@ -36,173 +36,766 @@
                 <button class="idea-button" data-idea="idea1">1.Grocery Store Inventory & Sales Management</button>
                 <button class="idea-button" data-idea="idea2">2. Healthcare Appointment Scheduling & Emergency Dispatch</button>
                 <button class="idea-button" data-idea="idea3">3. Restaurant Order & Delivery System</button>
-                <button class="idea-button" data-idea="idea4">4.Telecom fraud detection system</button>
-                <button class="idea-button" data-idea="idea5">5.Smart parking platform</button>
+                <button class="idea-button" data-idea="idea4">4.Smart Waste Collection Optimization System</button>
+                
             </div>
+              </div>
 
+              
             <div class="description-panel card">
-                    <div id="idea1-desc" class="description-content">
-    <h3>Grocery Store Inventory & Sales Management</h3>
 
-    <div class="info-block">
+                <div id="idea1-desc" class="description-content">
+                    <h1>Grocery Store Inventory & Sales Management</h1>
+
+                    <div class="info-block">
+                        <h4>SDG Alignment</h4>
+                        <ul>
+                            <li>SDG 2 – Zero Hunger</li>
+                            <li>SDG 12 – Responsible Consumption & Production</li>
+                            <li>SDG 8 – Decent Work & Economic Growth</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-block">
+                        <h4>Problem</h4>
+                        <ul>
+                            <li>Difficulty tracking product inventory efficiently</li>
+                            <li>Products are not arranged properly, making shelf organization inefficient.</li>
+                            <li>Products expiring before being sold</li>
+                            <li>Shelves do not highlight soon-to-expire products, causing losses.</li>
+                            <li>Overstocking or stockouts due to poor planning</li>
+                            <li>Fast-selling products are not identified early, causing stockouts.</li>
+                            <li>Long checkout queues affecting customer experience</li>
+                            <li>Need for dynamic product sorting (price, rating, expiry)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-block">
+                        <h4>System Requirements</h4>
+                        <ul><li>Enable real-time tracking of all product inventory levels.</li>
+        <li>Support efficient arrangement of items for better shelf organization.</li>
+        <li>Automatically detect and highlight products nearing expiry.</li>
+        <li>Organize shelf placement based on expiry priority to reduce waste.</li>
+        <li>Continuously monitor stock levels to avoid overstocking or stockouts.</li>
+        <li>Identify and display top-selling items for timely replenishment.</li>
+        <li>Ensure smooth and fair checkout flow using an orderly queue process.</li>
+        <li>Allow dynamic sorting of products by price, rating, or expiry.</li>
+                        </ul>
+                    </div>
+                
+                    </p>
+                    <h3>How it is implemented </h3>
+                    </p>
+                    
+                    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementatioin steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/hashing/Hashing.cpp" target="_blank" class="table-btn">Real-time inventory tracking</a></td>
+                <td>Hash Table</td>
+                <td>
+          • Store each product as a key–value pair (SKU → details).<br>
+• Update stock instantly on every sale/arrival.<br>
+• Retrieve product info in O(1) time for live inventor</td>
+<td>Hash table: O(1) average</td>
+</tr>
+
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/sorting%20algorithms/quicksort.cpp" target="_blank" class="table-btn">Shelf arrangement optimization</a></td>
+                <td>QuickSort</td>
+                <td>• Extract all products from inventory.<br>
+• Sort them by category/size using QuickSort.<br>
+• Arrange shelves based on the sorted list.</td>
+                <td>QuickSort:O(n log n) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Heap%20codes/min%20heap.cpp" target="_blank" class="table-btn">Identify soon-to-expire products</a></td>
+                <td>Min-Heap</td>
+                <td>• Insert products into a Min-Heap using expiry as priority.<br>
+• Always read the root to get the nearest-expiring item.<br>
+• Trigger alerts when expiry is close.<br></td>
+                <td>Min-Heap:O(log n) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/sorting%20algorithms/quick%20sort1.cpp" target="_blank" class="table-btn">Expiry-based shelf arrangement</a></td>
+                <td>QuickSort</td>
+                <td>• Sort products by expiry date using QuickSort.<br>
+• Place soon-to-expire items at the front.<br>
+• Re-sort when new stock arrives.<br></td>
+                  <td>QuickSort:O(n log n) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/hashing/Hashing1.cpp" target="_blank" class="table-btn">Track understock/overstock</a></td>
+                <td>Hash Table</td>
+                <td>• Continuously monitor stock levels with instant access to any item.<br>
+• Compare quantity with min/max thresholds.<br>
+• Auto-alert for reorder or overstock adjustments.<br></td>
+                 <td>Hash Table:O(1) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Heap%20codes/max%20heap.cpp" target="_blank" class="table-btn">Identify best-selling products</a></td>
+                <td>Max-Heap</td>
+                <td>• Insert products with sales count as heap priority.<br>
+• Update heap after each sale.<br>
+• Root gives the top-selling item for faster restocking.<br></td>
+                 <td>Max-Heap:O(log n) average</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Queue/queue.cpp" target="_blank" class="table-btn">Efficient checkout queue handling</a></td>
+                <td>FIFO Queue</td>
+                <td>• Add customers to the queue on arrival.<br>
+• Serve using FCFS by dequeueing.<br>
+• Open extra counters when queue grows.<br></td>
+                <td>Queue:O(1) average</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/sorting%20algorithms/productsorting.cpp" target="_blank" class="table-btn">Dynamic product sorting</a></td>
+                <td>MergeSort / HeapSort / QuickSort</td>
+                <td>• Sort by price using MergeSort for stability.<br>
+• Sort by rating using HeapSort for fast selection.<br>
+• Sort by expiry using QuickSort for efficiency<br></td>
+                  <td>MergeSort / HeapSort / QuickSort:O(n log n) average</td>
+            </tr>
+        </tbody>
+        </table>
+                    
+                </div>
+
+                <div id="idea1-image" class="idea-image hidden">
+                    <img src="images/grocery-people.png" alt="People buying grocery" />
+                    <img src="images/grocery.png" alt="Second image description" />
+                </div>
+
+                <div id="idea2-desc" class="description-content hidden">
+                    <h1>Healthcare Appointment Scheduling & Emergency Dispatch</h1>
+                   <h3>SDG Alignment:</h3>
+                    SDG 3 – Good Health & Well-being<br />
+                    SDG 11 – Sustainable Cities & Communities<br /><br />
+
+                     <h3>Probelms: </h3>
+                   <li>Patients face long waiting times due to poor priority handling.</li>
+<li>Searching patient records is slow because data is not efficiently organized.</li>
+<li>Doctors are sometimes double-booked due to lack of conflict detection.</li>
+<li>Appointment rescheduling becomes confusing without proper queue order.</li>
+<li>Emergency cases are delayed because they are not handled with immediate priority.</li>
+<li>Appointment tokens are disorganized, causing timing and sequencing issues.</li>
+<li>Finding symptoms in large patient notes is slow and inefficient.</li>
+<li>Insurance verification takes time because records are not balanced or sorted.</li>
+<li>Hospital analytics (patients, bills, tests) is slow due to inefficient range queries.</li>
+<li>Patients and staff struggle to find the shortest route inside the hospital.</li>
+<div class="system-requirements">
+    <h3>System Requirements</h3>
+    <ul>
+        <li>Automatically prioritize patients based on severity and arrival time.</li>
+        <li>Store patient records in a structure that supports instant searching.</li>
+        <li>Detect and prevent doctor scheduling conflicts before confirming appointments.</li>
+        <li>Maintain a clear, ordered queue to allow smooth appointment rescheduling.</li>
+        <li>Place emergency cases at the highest priority for immediate handling.</li>
+        <li>Organize appointment tokens in correct chronological order.</li>
+        <li>Support fast keyword and pattern-based searching inside patient notes.</li>
+        <li>Keep insurance records balanced and sorted for quick verification.</li>
+        <li>Enable fast analytics using optimized range-query processing.</li>
+        <li>Guide users with accurate shortest-path navigation through the hospital.</li>
+    </ul>
+</div>
+
+
+
+                   
+                    </p>
+                    <h3>How it is implemented </h3>
+                    </p>
+                    <table class="ads-table">
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Algorithm / Data Structure</th>
+            <th>Implementation Steps</th>
+            <th>efficiency</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/skip%20list/skiplist.cpp" target="_blank" class="table-btn">Long patient waiting times</a></td>
+            <td>Skip List</td>
+            <td>
+                • Assign each patient a priority (emergency/high or normal/low).<br>
+                • Insert the patient into the Skip List based on priority.<br>
+                • Use multiple “levels” to quickly locate correct position.<br>
+                • Doctor always picks the first (highest priority) patient.
+            </td>
+            <td>skiplist:O(log n)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/BinarySearch/BinarySearch.cpp" target="_blank" class="table-btn">Slow patient record searching</a></td>
+            <td>Binary Search Tree (BST)</td>
+            <td>
+                • Use patient ID or name as the key.<br>
+                • Insert new records in sorted order in the BST.<br>
+                • Search by moving left/right based on key comparison.<br>
+                • Access records without scanning all entries.
+            </td>
+              <td>BST:O(log n)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/unionfind/unionfind.cpp" target="_blank" class="table-btn">Doctor allocation conflicts</a></td>
+            <td>Union-Find (Disjoint Set Union)</td>
+            <td>
+                • Treat each doctor as a node.<br>
+                • Group doctors under departments using union().<br>
+                • Before assigning, run find() to check assignments.<br>
+                • If both assignments belong to same set → conflict detected.
+            </td>
+            <td>Union-Find : o(1)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Queue/queue1.cpp" target="_blank" class="table-btn">Appointment rescheduling confusion</a></td>
+            <td>Queue</td>
+            <td>
+                • Add appointments to the back of the queue.<br>
+                • Serve patients from the front in order.<br>
+                • On rescheduling, reinsert patient in queue properly.<br>
+                • Ensures first-come-first-served flow.
+            </td>
+            <td>Queue:O(1) average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/stack/stack.cpp" target="_blank" class="table-btn">Emergency patient handling delays</a></td>
+            <td>Stack</td>
+            <td>
+                • Push new emergency cases to the top of the stack.<br>
+                • Doctor treats latest emergency first (pop).<br>
+                • Remove emergency entry after treatment.<br>
+                • Ensures instant attention for emergencies.
+            </td>
+            <td>stack:O(1) average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/sorting%20algorithms/selectionsort.cpp" target="_blank" class="table-btn">Unsorted appointment tokens</a></td>
+            <td>Selection Sort</td>
+            <td>
+                • Collect all tokens.<br>
+                • Repeatedly find the earliest token.<br>
+                • Place it at the beginning.<br>
+                • Continue until list is fully sorted.
+            </td>
+            <td>selection sort:O(n²)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/KMPalgorithm/kmp.cpp" target="_blank" class="table-btn">Difficulty searching symptoms in notes</a></td>
+            <td>KMP Algorithm</td>
+            <td>
+                • Doctor enters keyword.<br>
+                • Build LPS (Longest Prefix Suffix) table.<br>
+                • Scan the notes using KMP pattern matching.<br>
+                • Locate symptoms instantly without re-checking characters.
+            </td>
+            <td>KMP algorithm:O(n) average</td>
+        </tr>
+
+        <tr>
+            <td>
+<a href="https://github.com/Safiyah-09/DSA_codes/blob/main/unionfind/unionfind.cpp" target="_blank" class="table-btn">Slow insurance verification</a></td>
+            <td>Red-Black Tree</td>
+            <td>
+                • Insert each policy into the Red-Black Tree.<br>
+                • Tree self-balances on insert/delete.<br>
+                • Search for policy number or expiry quickly.<br>
+                • Provides consistent, fast lookup.
+            </td>
+            <td>Red-Black Tree:O(log n)</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Fenwicktree/fenwick.cpp" target="_blank" class="table-btn">Slow medical analytics (counts, bills, tests)</a></td>
+            <td>Fenwick Tree (Binary Indexed Tree)</td>
+            <td>
+                • Store daily statistics in BIT.<br>
+                • Update counts using BIT update operation.<br>
+                • Query using prefix(end) − prefix(start).<br>
+                • Get instant totals for any time range.
+            </td>
+            <td>Fenwick Tree:O(log n)average</td>
+        </tr>
+
+        <tr>
+            <td>
+<a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Dijkstra%20algorithm/Dijkstra.cpp" target="_blank" class="table-btn">Difficulty finding shortest route in hospital</a></td>
+            <td>Dijkstra’s Algorithm</td>
+            <td>
+                • Represent floors, rooms, halls as graph nodes.<br>
+                • Connect nodes with weighted edges (distance/time).<br>
+                • Run Dijkstra from source when destination selected.<br>
+                • Display shortest/fastest route.
+            </td>
+            <td>Dijkstra’s Algorithm:O(n^2)</td>
+        </tr>
+
+    </tbody>
+</table>
+
+                </div>
+
+                <div id="idea3-desc" class="description-content hidden">
+                    <h3>Restaurant Order & Delivery System</h3>
+                    <p>
+                        <strong>SDG Alignment:</strong><br/>
+                        SDG 8 – Decent Work & Economic Growth<br/>
+                        SDG 11 – Sustainable Cities & Communities<br/>
+                        SDG 12 – Responsible Consumption & Production<br/><br/>
+
+                        <h3></h3>Problem:</h3>
+                    <p>
+    <strong>SDG Alignment:</strong><br/>
+    SDG 8 – Decent Work & Economic Growth<br/>
+    SDG 11 – Sustainable Cities & Communities<br/>
+    SDG 12 – Responsible Consumption & Production<br/><br/>
+
+    
+   <h3>Problem:</h3>
+
+<p>Restaurants face challenges such as:</p>
+
+<ul>
+    <li>The system struggles to store and organize a large number of orders efficiently.</li>
+    <li>Retrieving customer preferences and past order details is slow and inefficient.</li>
+    <li>Accessing menu details like price, category, and ingredients takes longer as the menu grows.</li>
+    <li>Slow searching of dishes based on keywords or ingredients in descriptions.</li>
+    <li>Inability to quickly determine which dishes are trending or most ordered.</li>
+    <li>Sorting dishes by rating or popularity for recommendations becomes slow.</li>
+    <li>The system struggles to compute the fastest delivery route under varying traffic conditions.</li>
+    <li>Calculating distances between multiple delivery locations repeatedly wastes time.</li>
+</ul>
+
+<p>
+            <h3> system-requirements:</h3>
+  <ul>
+   
+    <li>Store and manage orders using a fast, balanced, time-sorted structure.</li>
+    <li>Provide quick retrieval of customer names, preferences, and past orders.</li>
+    <li>Allow constant-time access to menu items and their details.</li>
+    <li>Support fast keyword or ingredient search within dish descriptions.</li>
+    <li>Identify and update popular dishes instantly as orders come in.</li>
+    <li>Efficiently sort dishes based on ratings or popularity for recommendations.</li>
+    <li>Compute the shortest and fastest delivery route even under traffic variations.</li>
+    <li>Maintain all-pairs shortest paths for repeated delivery operations.</li>
+</ul>
+
+</p>
+
+                     <h3>How it is implemented:</h3>
+                    <table class="ads-table"> 
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Algorithm / Data Structure</th>
+            <th>Implementation Steps</th>
+            <th>efficiency</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/AvlTree/avl.cpp" target="_blank" class="table-btn">Order Storage & Management</a></td>
+            <td>AVL Tree</td>
+            <td>
+                • Store each order as a node in an AVL Tree.<br>
+                • Insert new orders while maintaining tree balance.<br>
+                • Perform left/right rotations when height difference exceeds 1.<br>
+                • Retrieve orders quickly using in-order traversal.<br>
+                • Keeps orders sorted by timestamp or order ID.
+            </td>
+            <td>AVL Tree:O(log N)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Trie/Trie.cpp" target="_blank" class="table-btn">Customer Preferences & Order History</a></td>
+            <td>Trie</td>
+            <td>
+                • Store customer names and frequent dishes as character nodes.<br>
+                • Insert names/dishes letter-by-letter.<br>
+                • Retrieve customer history using prefix search.<br>
+                • Enables auto-suggestions and fast lookups.
+            </td>
+            <td>Trie:O(L)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/lookup/lookup.cpp" target="_blank" class="table-btn">Menu Lookup</a></td>
+            <td>Lookup Table</td>
+            <td>
+                • Store menu items using indexed keys.<br>
+                • Direct O(1) access to price, ingredients, and details.<br>
+                • Update entries instantly when menu changes.
+            </td>
+            <td>Lookup Table:O(1)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Boyer%E2%80%93Moore%20Algorithm/Boyer%E2%80%93Moore%20Algorithm.cpp" target="_blank" class="table-btn">Keyword Search in Menu</a></td>
+            <td>Boyer–Moore Algorithm</td>
+            <td>
+                • Preprocess keyword to create bad-character and good-suffix tables.<br>
+                • Scan menu descriptions using Boyer–Moore pattern matching.<br>
+                • Skip unnecessary comparisons for faster searching.<br>
+                • Return dishes whose descriptions contain the keyword.
+            </td>
+            <td>>Boyer–Moore Algorithm:O(N / M) (average)N = text length, M = pattern length</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Heap%20codes/maxheap1.cpp" target="_blank" class="table-btn">Trending or Most Ordered Dishes</a></td>
+            <td>Max-Heap</td>
+            <td>
+                • Maintain frequency count for each dish.<br>
+                • Insert/update dish in Max-Heap based on popularity.<br>
+                • Root always shows the most popular dish.<br>
+                • Extract max to display trending dishes.
+            </td>
+            <td>Max-Heap:O(log N)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/sorting%20algorithms/insertsort.cpp" target="_blank" class="table-btn">Dish Recommendation Sorting</a></td>
+            <td>Insertion Sort</td>
+            <td>
+                • Store dishes with ratings or popularity scores.<br>
+                • Compare each dish with previously sorted items.<br>
+                • Insert each dish into its correct sorted position.<br>
+                • Generates Top-N sorted recommendations.
+            </td>
+            <td>Insertion Sort:O(N²)average</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Bellman%E2%80%93Ford%20Algorithm/Bellman%E2%80%93Ford%20Algorithm.cpp" target="_blank" class="table-btn">Best Delivery Route Optimization</a></td>
+            <td>Bellman–Ford Algorithm</td>
+            <td>
+                • Model delivery areas as a weighted graph.<br>
+                • Initialize distance to all nodes from the source.<br>
+                • Relax all edges repeatedly to find shortest paths.<br>
+                • Supports negative weights (traffic delays).<br>
+                • Returns best/fastest delivery route.
+            </td>
+            <td>Bellman–Ford Algorithm:O(V × E)average</td>
+        </tr>
+
+        <tr>
+            <td>
+<a href="https://github.com/Safiyah-09/DSA_codes/blob/main/Floyd%E2%80%93Warshall%20Algorithm/Floyd%E2%80%93Warshall%20Algorithm.cpp" target="_blank" class="table-btn">Precomputed Distance Between Locations</a></td>
+            <td>Floyd–Warshall Algorithm</td>
+            <td>
+                • Represent all delivery points as graph nodes.<br>
+                • Create a distance matrix for every node pair.<br>
+                • Apply: dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]).<br>
+                • Precomputes all-pairs shortest path.<br>
+                • Ideal for repeated deliveries & route planning.
+            </td>
+            <td>Floyd–Warshall Algorithm:O(N³)average</td>
+        </tr>
+
+      
+    </tbody>
+</table>
+
+                </div>
+
+                <div id="idea4-desc" class="description-content hidden">
+                    <h3>Smart Waste Collection Optimization System</h3>
+                    <p> <div class="info-block">
         <h4>SDG Alignment</h4>
         <ul>
-            <li>SDG 2 – Zero Hunger</li>
+            <li>SDG 11 – Sustainable Cities & Communities</li>
             <li>SDG 12 – Responsible Consumption & Production</li>
-            <li>SDG 8 – Decent Work & Economic Growth</li>
+            <li>SDG 3 – Good Health & Well-Being</li>
         </ul>
     </div>
 
     <div class="info-block">
         <h4>Problem</h4>
+        <p><strong>Problems Faced by Cities</strong></p>
         <ul>
-            <li>Difficulty tracking product inventory efficiently</li>
-            <li>Products expiring before being sold</li>
-            <li>Overstocking or stockouts due to poor planning</li>
-            <li>Long checkout queues affecting customer experience</li>
-            <li>Need for dynamic product sorting (price, rating, expiry)</li>
+            <li>Overflowing bins due to irregular waste collection</li>
+            <li>Inefficient waste collection routes causing long travel times</li>
+            <li>Sudden waste spikes during festivals or seasonal events</li>
+            <li>Staff inability to manually check all bins across the city</li>
+            <li>Overflow incidents not being detected on time</li>
+            <li>Improper allocation of trucks and staff based on waste load</li>
+            <li>Difficulty identifying the exact locations of bins and truck positions</li>
         </ul>
     </div>
 
     <div class="info-block">
         <h4>System Requirements</h4>
         <ul>
-            <li>Real-time inventory tracking</li>
-            <li>Identify best-selling & soon-to-expire products</li>
-            <li>Optimize shelf arrangement</li>
-            <li>Efficient checkout queue handling</li>
-            <li>Sorting: price, rating, expiry</li>
+            <li>Requires real-time monitoring of bin fill levels</li>
+            <li>Needs optimized routes for waste collection trucks</li>
+            <li>Needs forecasting support from historical data</li>
+            <li>Requires a centralized dashboard showing all bins</li>
+            <li>Requires automatic alerts when bins exceed thresholds</li>
+            <li>System must analyze patterns to allocate resources</li>
+            <li>Needs GPS-based mapping & location lookup</li>
         </ul>
     </div>
+    <table class="ads-table">
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Algorithm / Data Structure</th>
+            <th>Implementation Steps</th>
+            <th>efficiency</th>
+        </tr>
+    </thead>
 
-    <div class="info-block">
-        <h4>Implementation Steps (ADS)</h4>
+    <tbody>
 
-        <strong>Product Catalog & Lookup</strong>
-        <p>Use a hash table to store product info (SKU, price, quantity, expiry).</p>
+        <!-- Problem 1 -->
+        <tr>
+            <td>
+<a href="https://github.com/Safiyah-09/DSA_codes/blob/main/smart%20wastage%20management/c1.cpp" target="_blank" class="table-btn">Overflowing bins due to irregular waste collection</a></td>
+            <td>Binary Tree</td>
+            <td>
+                • Store bin fill levels in sorted order.<br>
+                • Quickly find bins nearing overflow.<br>
+                • Update values as sensors send new data.
+            </td>
+            <td>Binary Tree:O(log n)average</td>
+        </tr>
 
-        <strong>Best-Selling & Expiry Tracking</strong>
-        <ul>
-            <li>Max-Heap → Best-selling items</li>
-            <li>Min-Heap → Soon-to-expire items</li>
-        </ul>
+        <tr>
+            <td></td>
+            <td>2–3 Tree</td>
+            <td>
+                • Insert continuous sensor readings.<br>
+                • Balanced structure ensures fast overflow detection.<br>
+                • Handles large real-time data smoothly.
+            </td>
+            <td>2–3 Tree:O(log n)average</td>
+        </tr>
 
-        <strong>Shelf Arrangement & Sorting</strong>
-        <ul>
-            <li>Expiry: QuickSort</li>
-            <li>Price: MergeSort</li>
-            <li>Ratings: HeapSort</li>
-        </ul>
+        <tr>
+            <td></td>
+            <td>Bubble Sort</td>
+            <td>
+                • Sort bins by fill level.<br>
+                • Move nearly overflowing bins to the top.<br>
+                • Re-run after every sensor update.
+            </td>
+            <td>Bubble Sort:O(n²)average</td>
+        </tr>
 
+        <!-- Problem 2 -->
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/smart%20wastage%20management/c2.cpp" target="_blank" class="table-btn">Inefficient waste collection routes</a></td>
+            <td>DFS</td>
+            <td>
+                • Explore all road connections.<br>
+                • Understand complete path structure.<br>
+                • Map unreachable or isolated areas.
+            </td>
+            <td>DFS:O(V + E)</td>
+        </tr>
 
-        <strong>Checkout Queue Management</strong>
-        <p>Use FIFO Queue to handle customer checkout flow.</p>
-    </div>
+        <tr>
+            <td></td>
+            <td>BFS</td>
+            <td>
+                • Find shortest hop-based route from truck → bin.<br>
+                • Optimize travel time in dense zones.<br>
+                • Recalculate quickly during route changes.
+            </td>
+            <td>DFS:O(V + E)</td>
+        </tr>
 
-          
-</div>
+        <tr>
+            <td></td>
+            <td>Kruskal's Algorithm</td>
+            <td>
+                • Build a Minimum Spanning Tree of bins.<br>
+                • Group nearest bins to reduce distance.<br>
+                • Minimize total route cost.
+            </td>
+            <td>Kruskal's Algorithm:O(E log E)</td>
+        </tr>
 
-                <div id="idea2-desc" class="description-content hidden">
-                    <h3>Healthcare Appointment Scheduling & Emergency Dispatch</h3>
-                    <p><strong>SDG Alignment:</strong><br />
-                    SDG 3 – Good Health & Well-being<br />
-                    SDG 11 – Sustainable Cities & Communities<br /><br />
+        <!-- Problem 3 -->
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/smart%20wastage%20management/c3.cpp" target="_blank" class="table-btn">Sudden waste spikes during festivals</a></td>
+            <td>Binary Tree</td>
+            <td>
+                • Store historical fill-level data by date/time.<br>
+                • Compare patterns with current data.<br>
+                • Predict when spikes may occur.
+            </td>
+            <td>Binary Tree:O(log n)average</td>
+        </tr>
 
-                    <strong>Problem:</strong><br />
-                    Patients face long wait times, delayed ambulance response, and inefficient doctor appointment management. Hospitals need a system that:<br />
-                    - Prioritizes emergency patients<br />
-                    - Reduces travel time for ambulances<br />
-                    - Optimizes doctor schedules<br />
-                    - Provides fast access to patient records<br /><br />
+        <tr>
+            <td></td>
+            <td>2–3 Tree</td>
+            <td>
+                • Handle large historical datasets efficiently.<br>
+                • Maintain balanced access for trend analysis.<br>
+                • Support fast pattern detection.
+            </td>
+             <td>2–3 Tree:O(log n)average</td>
+        </tr>
 
-                    <strong>Implementation Steps (ADS):</strong><br />
-                    <em>City & Hospital Graph Representation:</em><br />
-                    Represent hospitals, clinics, and patient homes as nodes in a weighted graph.<br />
-                    Edges represent roads; weights store travel time between locations.<br /><br />
+        <!-- Problem 4 -->
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/smart%20wastage%20management/c4.cpp" target="_blank" class="table-btn">Staff cannot monitor all bins manually</a></td>
+            <td>DFS</td>
+            <td>
+                • Scan all bins zone by zone.<br>
+                • Refresh statuses across the entire network.<br>
+                • Detect unresponsive or faulty bins.
+            </td>
+            <td>DFS:O(V + E)</td>
+        </tr>
 
-                    <em>Patient Records Management:</em><br />
-                    Store all patient records, appointment history, and medical data in a hash table.<br />
-                    This allows O(1) access to patient information during scheduling and emergency handling.<br /><br />
+        <tr>
+            <td></td>
+            <td>BFS</td>
+            <td>
+                • Find nearest bins quickly for dashboards.<br>
+                • Update live status in real time.<br>
+                • Assist in quick decision-making.
+            </td>
+            <td>DFS:O(V + E)</td>
+        </tr>
 
-                    <em>Appointment Queue Management:</em><br />
-                    Use a priority queue (min-heap) to manage patient appointments.<br />
-                    Patients with urgent cases are given higher priority to reduce wait times.<br /><br />
+        <tr>
+            <td></td>
+            <td>Binary Tree</td>
+            <td>
+                • Store bin metadata (ID, location, last update).<br>
+                • Retrieve any bin details instantly.<br>
+                • Improve dashboard responsiveness.
+            </td>
+            <td>Binary Tree:O(log n)average</td>
+        </tr>
 
-                    <em>Ambulance Route Optimization:</em><br />
-                    Use Dijkstra’s algorithm on the weighted graph to calculate the fastest path for ambulances.<br />
-                    Min-heap is used in Dijkstra to efficiently select the next node with minimum travel time.<br /><br />
+        <!-- Problem 5 -->
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/smart%20wastage%20management/c5.cpp" target="_blank" class="table-btn">Overflow incidents are not detected quickly</a></td>
+            <td>Bubble Sort</td>
+            <td>
+                • Sort bins by fill level from high → low.<br>
+                • Identify dangerous bins immediately.<br>
+                • Reduce reaction time for staff.
+            </td>
+                <td>Bubble Sort:O(n²)average</td>
+        </tr>
 
-                    <em>Doctor Scheduling Optimization:</em><br />
-                    Apply sorting algorithms to arrange patient appointments by urgency and availability.<br />
-                    Use arrays or hash tables to track doctor availability and appointment slots.<br />
-                    This minimizes idle time for doctors and reduces patient wait times.<br /><br />
+        <tr>
+            <td></td>
+            <td>2–3 Tree</td>
+            <td>
+                • Store real-time sensor values in balanced form.<br>
+                • Ensure stable threshold checks.<br>
+                • Handle huge data streams efficiently.
+            </td>
+               <td>2–3 Tree:O(log n)average</td>
+        </tr>
 
-                    <em>Emergency Handling & Updates:</em><br />
-                    Continuously update patient queues and ambulance routes based on new emergencies.<br />
-                    Use priority queues to dynamically reorder patients or ambulance dispatch as needed.</p>
+        <tr>
+            <td></td>
+            <td>Binary Tree</td>
+            <td>
+                • Store alert rules and thresholds.<br>
+                • Compare values quickly.<br>
+                • Trigger instant notifications.
+            </td>
+               <td>Binary Tree:O(log n)average</td>
+        </tr>
+
+        <!-- Problem 6 -->
+        <tr>
+            <td>
+<a href="https://github.com/Safiyah-09/DSA_codes/blob/main/smart%20wastage%20management/c6.cpp" target="_blank" class="table-btn">Improper truck and staff allocation</a></td>
+            <td>Binary Tree</td>
+            <td>
+                • Store zone-wise waste levels.<br>
+                • Compare which zones need more trucks.<br>
+                • Allocate resources based on load.
+            </td>
+               <td>Binary Tree:O(log n)average</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>2–3 Tree</td>
+            <td>
+                • Maintain long-term waste patterns.<br>
+                • Predict future staff requirements.<br>
+                • Plan optimal truck distribution.
+            </td>
+              <td>2–3 Tree:O(log n)average</td>
+        </tr>
+
+        <!-- Problem 7 -->
+        <tr>
+            <td><a href="https://github.com/Safiyah-09/DSA_codes/blob/main/smart%20wastage%20management/c7.cpp" target="_blank" class="table-btn">Difficulty identifying bin/truck locations</a></td>
+            <td>Binary Tree</td>
+            <td>
+                • Store GPS coordinates of each bin/truck.<br>
+                • Allow fast lookup by ID.<br>
+                • Improve location tracking accuracy.
+            </td>
+               <td>Binary Tree:O(log n)average</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>2–3 Tree</td>
+            <td>
+                • Manage continuous GPS updates.<br>
+                • Keep searches fast even as data scales.<br>
+                • Support real-time positioning.
+            </td>
+              <td>2–3 Tree:O(log n)average</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>BFS</td>
+            <td>
+                • Find nearest bins to a truck's location.<br>
+                • Suggest shortest movement path.<br>
+                • Improve navigation efficiency.
+            </td>
+             <td>DFS:O(V + E)</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</div></p>
                 </div>
 
-                <div id="idea3-desc" class="description-content hidden">
-                    <h3>Restaurant Order & Delivery System</h3>
-                    <p><p>
-    <strong>SDG Alignment:</strong><br/>
-    SDG 8 – Decent Work & Economic Growth<br/>
-    SDG 11 – Sustainable Cities & Communities<br/>
-    SDG 12 – Responsible Consumption & Production<br/><br/>
-
-    <strong>Problem:</strong><br/>
-    Restaurants face challenges such as:<br/>
-    - Managing multiple customer orders efficiently<br/>
-    - Ensuring fast and timely delivery<br/>
-    - Recommending popular or personalized dishes<br/>
-    - Tracking trending menu items and combos<br/>
-    - Handling order history for repeat customers<br/><br/>
-
-    The system must:<br/>
-    - Process orders in the order they are received<br/>
-    - Optimize delivery routes for multiple locations<br/>
-    - Track customer preferences and order history<br/>
-    - Suggest popular or recommended dishes dynamically<br/><br/>
-
-    <strong>Implementation Steps (ADS):</strong><br/>
-    <em>Order Management:</em><br/>
-    Use a queue (FIFO) to manage customer orders.<br/>
-    Ensures orders are processed in the order they are received.<br/><br/>
-
-    <em>Menu & Customer Preferences:</em><br/>
-    Store menu items, customer preferences, and past orders in hash tables for fast retrieval.<br/><br/>
-
-    <em>Trending Dishes & Popular Combos:</em><br/>
-    Use heaps to dynamically track best-selling or trending menu items.<br/><br/>
-
-    <em>Delivery Route Optimization:</em><br/>
-    Model delivery locations and routes as a weighted graph.<br/>
-    Apply Dijkstra’s algorithm to determine the fastest delivery paths.<br/><br/>
-
-    <em>Dish Recommendation:</em><br/>
-    Maintain a list of dishes with their ratings and frequency of orders.<br/>
-    Apply MergeSort to sort dishes by popularity or rating in descending order.<br/>
-    Suggest the top-N dishes to the customer based on sorted list.<br/>
-    Sorting ensures that highly rated and frequently ordered dishes are prioritized.
-</p>
-</p>
-                </div>
-
-                <div id="idea4-desc" class="description-content hidden">
-                    <h3>Construction Management</h3>
-                    <p></p>
-                </div>
-
-                <div id="idea6-desc" class="description-content hidden">
-                    <h3>Telecommunication Solutions</h3>
-                    <p></p>
-                </div>
+              
             </div>
-
-                <div class="idea-image">
-    <img src="grocery-people.png" alt="People buying grocery">
-    <img src="grocery.png" alt="Second image description">
-</div>
         </div>
     </div>
 
