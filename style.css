@@ -604,3 +604,10 @@ body {
 .table-btn:hover {
     background-color: #4b3575;
 }
+.idea-image img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: block;
+    margin-top: 50px; /* reduce from 100px to 20px */
+}
