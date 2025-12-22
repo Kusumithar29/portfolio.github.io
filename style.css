@@ -370,9 +370,11 @@ body {
   white-space: nowrap;    /* keeps text in one line */
 }
 .page-interactive .center-img {
-  width: 100%;
-  display: block;
-  border-radius: 12px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: block;
+    margin-top: 50px; /* reduce from 100px to 20px */
 }
 
 .ads-table a {
