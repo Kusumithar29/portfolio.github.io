@@ -370,8 +370,8 @@ body {
   white-space: nowrap;    /* keeps text in one line */
 }
 .page-interactive .center-img {
-  display: block;
   width: 100%;
+  display: block;
   border-radius: 12px;
 }
 
