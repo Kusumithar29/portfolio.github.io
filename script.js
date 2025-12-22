@@ -32,13 +32,21 @@ function handleIdeaClick(button) {
     // 1. Reset state: Hide all descriptions and deactivate all buttons
     hideAllDescriptions();
     deactivateAllButtons();
-
+    document.querySelectorAll('.idea-image').forEach(imgDiv => {
+    imgDiv.classList.add('hidden');
+});
     // 2. Show the description corresponding to the clicked button
     // It looks for an element with an ID like "idea1-desc"
     const targetDesc = document.getElementById(`${ideaId}-desc`);
     if (targetDesc) {
         targetDesc.classList.remove('hidden');
     }
+     // Show selected image
+    const targetImage = document.getElementById(`${ideaId}-image`);
+    if (targetImage) {
+        targetImage.classList.remove('hidden');
+    }
+
 
     // 3. Set the clicked button as active (triggers the orange line and scaling CSS)
     button.classList.add('active');
