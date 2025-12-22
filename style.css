@@ -369,6 +369,11 @@ body {
   font-size: 16px;
   white-space: nowrap;    /* keeps text in one line */
 }
+.page-interactive .center-img {
+  display: block;
+  margin: auto;
+}
+
 .ads-table a {
     /* Sets the default link color to WHITE, blending with the rest of the text */
     color: white; 
