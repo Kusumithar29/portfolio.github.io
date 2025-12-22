@@ -354,6 +354,21 @@ body {
     margin: 0 !important;
     display: none !important; /* Ensure it is completely gone */
 }
+.page-interactive .sdg-container {
+  display: flex;          /* horizontal alignment */
+  gap: 15px;              /* space between SDGs */
+  flex-wrap: wrap;        /* wrap to next line if needed */
+}
+
+/* SDG box */
+.page-interactive .sdg {
+  background-color: #5b3f87;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;    /* keeps text in one line */
+}
 .ads-table a {
     /* Sets the default link color to WHITE, blending with the rest of the text */
     color: white; 
