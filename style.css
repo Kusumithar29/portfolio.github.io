@@ -547,26 +547,6 @@ body {
         flex-direction: column; /* Stacks the panels vertically on small screens */
     }
 }
-.description-panel {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.description-content {
-  flex-basis: 60%;
-}
-
-.idea-image {
-  flex-basis: 40%;
-}
-
-.idea-image img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  display: block;
-}
 
 /* Hide elements with .hidden */
 .hidden {
