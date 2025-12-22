@@ -358,7 +358,6 @@ body {
   display: flex;          /* horizontal alignment */
   gap: 15px;              /* space between SDGs */
   flex-wrap: wrap;
-   margin-bottom: 20px;  
 }
 
 /* SDG box */
@@ -372,8 +371,7 @@ body {
 }
 .page-interactive .center-img {
   display: block;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 40px auto;
 }
 
 .ads-table a {
