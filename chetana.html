@@ -1,364 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Business Case Study Portfolio</title>
-
-<style>
-/* ================= GLOBAL STYLES ================= */
-body{
-    margin:0;
-    font-family:Segoe UI, Tahoma, sans-serif;
-    background:#f4f6f8;
-    color:#2c3e50;
-    scroll-behavior:smooth;
-}
-header{
-    background:#2c3e50;
-    color:#fff;
-    padding:60px 20px;
-    text-align:center;
-    border-bottom:5px solid #8e2c2c;
-}
-.container{
-    max-width:1100px;
-    margin:30px auto;
-    background:#fff;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.15);
-}
-h1,h2,h3{
-    margin-top:0;
-}
-h2{
-    border-bottom:2px solid #ddd;
-    padding-bottom:10px;
-    margin-bottom:25px;
-}
-.case-study{
-    border-left:5px solid #8e2c2c;
-    padding:20px;
-    margin-bottom:25px;
-    background:#fafafa;
-}
-.case-study p{
-    line-height:1.6;
-    font-size:0.95rem;
-}
-.btn-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-    gap:15px;
-    margin:25px 0;
-}
-.glow-button{
-    padding:12px;
-    background:#2c3e50;
-    color:white;
-    border:2px solid #8e2c2c;
-    border-radius:8px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:0.3s;
-}
-.glow-button:hover{
-    background:#8e2c2c;
-}
-.code-display{
-    display:none;
-    background:#1e1e1e;
-    color:#00ff41;
-    padding:25px;
-    border-radius:10px;
-    margin-top:20px;
-    font-family:Consolas, monospace;
-    white-space:pre;
-    overflow-x:auto;
-}
-.active{
-    display:block;
-}
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-}
-th,td{
-    border:1px solid #ddd;
-    padding:12px;
-    text-align:left;
-}
-th{
-    background:#2c3e50;
-    color:#fff;
-}
-footer{
-    text-align:center;
-    padding:35px;
-    font-weight:bold;
-    color:#555;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Themed Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
+<body class="page-interactive">
 
-<body>
+     <nav class="navbar">
+        <div class="logo">City Design</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="project.html">PROJECT</a></li>
+            <li><a href="kusumitha.html">KUSUMITHA</a></li>
+            <li><a href="safiyah.html">SAFIYAH</a></li>
+            <li><a href="chetana.html">CHETANA</a></li>
+            <li><a href="suzn.html">SUZAN</a></li>
+            <li><a href="collab.html">COLLABS</a></li>
+        </ul>
+    </nav>
 
-<header>
-<h1>BUSINESS CASE STUDY PORTFOLIO</h1>
-<p>Multi-Sector Business Analysis with Algorithmic Applications</p>
-</header>
+    <section class="page-headings">
+        <div class="hero-content">
+            <h1>Identified Business Ideas</h1>
+        </div>
+    </section>
 
-<!-- ================= CASE STUDIES ================= -->
-<div class="container">
-<h2>Business Case Studies</h2>
+    <section class="hero-section"></section> 
 
-<div class="case-study">
-<h3>1. Impact of Solar Energy Adoption on Property Value</h3>
-<p>
-This case study evaluates how rooftop solar panel installations affect residential
-property prices, buyer demand, return on investment, and sustainability branding
-in modern housing developments.
-</p>
-</div>
+    <div class="mainlayout-container">
+        <div class="interactive-layout">
+            <div class="sidebar-panel card">
 
-<div class="case-study">
-<h3>2. Smart Suburban Community Development</h3>
-<p>
-Focuses on planning technology-driven neighborhoods using IoT systems such as
-smart meters, EV charging stations, and digital security infrastructure.
-</p>
-</div>
+                <button class="idea-button" data-idea="idea1">🏦 Real estate and housing</button>
+                <button class="idea-button" data-idea="idea2">💰Finance and banking</button>
+                <button class="idea-button" data-idea="idea3">🛕Culture and religion </button>
+                <button class="idea-button" data-idea="idea4">🏥Hospitality</button>
+            
+            </div>
 
-<div class="case-study">
-<h3>3. Digital Transformation in Banking</h3>
-<p>
-Examines how mobile banking, UPI systems, automation, and AI reduce operational
-costs while improving customer experience in the banking sector.
-</p>
-</div>
+            <div class="description-panel card">
+                <div id="idea1-desc" class="description-content">
+                    <h1>Real estateand housing</h1>
+                    <p>* How installation of rooftop solar panels affects selling price and buyer demand
+                       * Financial analysis: initial investment vs. long-term value
+                       * Government incentives and sustainability branding in housing projects</p>
+                        <h3>SDG's Associated</h3>
+                     <div class="sdg-container">
+    <div class="sdg">SDG 16 – Peace, Justice & Strong Institutions</div>
+    <div class="sdg">SDG 9 – Industry, Innovation & Infrastructure</div>
+    <div class="sdg">SDG 10 – Reduced Inequalities</div>
+  </div>
+                    <img src="government.jpeg" alt="Image" class="center-img">
 
-<div class="case-study">
-<h3>4. Cybersecurity & Fraud Prevention in FinTech</h3>
-<p>
-Analyzes the rise of digital fraud and the role of AI-based fraud detection,
-biometric authentication, and secure transaction frameworks.
-</p>
-</div>
+                    <h3>What all does it include</h3>
+                    <ul>
+                        <li>Aadhaar and PAN related services</li>
+                        <li>Birth, death, caste, income certificates</li>
+                        <li>Income and Property tax</li>
+                        <li>Pension applications</li>
+                        <li>Ration  and health card details</li>
+                        <li>Notifications of latest government services</li>
+                        <li>instant download</li>
+                        <li>Tracking application status</li>
+                        <li>Stores data securely and efficiently</li>
+                        <li>Provides security pin to access the app for each individual user.</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>Manual Paper-Based Processes</li>
+                        <li>Integration Challenges Between Departments</li>
+                        <li>Delayed Public Service Delivery</li>
+                        <li>citizens to roaming to offices for services</li>
+                        <li>Slow & Inefficient Government Services</li>
+                        <li>Difficulty Accessing Services in Rural Areas</li>
+                    </ul>
+                    </p>
+                     <div class="container">
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/Kusumithar29/DAA_2025/blob/5f04bff6fad81230f61114cea2db6b3d06851438/e%20governance/egs.json" target="_blank" class="github-btn">
+                    Sample JSON Input File
+                </a>
+            </div>
+        </div>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>Efficieny</th>
+            </tr>
+        </thead>
 
-<div class="case-study">
-<h3>5. Cultural Influence on Consumer Behavior</h3>
-<p>
-Explores how cultural and religious values shape consumer choices in food,
-fashion, tourism, and festival-based markets.
-</p>
-</div>
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/citizen%20login/cla.cpp" target="_self">Citizen login and Authentication</a></td>
+                <td>Hashing</td>
+                <td>1. Store passwords using salted hashing.<br>
+2. On login, hash the input password and compare with stored hash.<br>
+3. Maintain session tokens in a hash table for instant validation.<br>
+4. Use rate limiting to prevent brute-force attacks.</td>
+                <td>O(1) average</td>
+                    
+            </tr>
 
-<div class="case-study">
-<h3>6. Sustainable Practices in the Hospitality Industry</h3>
-<p>
-Studies eco-friendly hotel operations such as energy efficiency, waste
-management, green certifications, and their effect on brand reputation.
-</p>
-</div>
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Document%20Storage%20%26%20Retrieval/dsr.cpp" target="_self">Document Storage & Retrieval</a></td>
+                <td>Trie + Hash Table+KMP</td>
+                <td>1. Store document titles/keywords in a Trie for prefix search.<br>
+2. Maintain metadata (FileID → Storage path) in hash table.<br>
+3. Fetch file path in O(1) using hash key.<br>
+4. Return results instantly for search boxes.<br>
+5.Use KMPto search inside document titles or descriptions.</td>
+                <td>trie-O(1) average<br>
+                    Hash table-O(1) average<br>
+                    KMP-O(n + m)average</td>
+            </tr>
 
-<!-- ================= ALGORITHMS ================= -->
-<div class="container">
-<h2>Algorithm Implementation Library</h2>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Real-Time%20Notifications/nas.cpp" target="_self">Real-Time Notifications,Alerts and search</a></td>
+                <td>Priority Queue (Heap)+Brute Force Search+Heap Sort</td>
+                <td>1. Store alerts with severity level & timestamp.<br>
+2. Reinsert when escalated.<br>
+3.Use Brute Force String Search for substring search inside scheme descriptions.<br>
+4. Display auto-complete results.<br>
+5.Use Heap Sort(min by time, max by severity) to display sorted notification lists to admins.</td>
+<td>PRiority Queue-O(log n) average
+Brute Force String Search-O(n·m) average<br>
+Heap Sort-O(n log n)average</td>
+            </tr>
+            
+             <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Service%20Request%20Prioritization/srp.cpp" target="_self">Service Request Prioritization</a></td>
+                <td>Heap (Min/Max Priority Queue)+Heap Sort</td>
+                <td>1. Assign severity to each request.<br>
+2. Push into Min-Heap/Max-Heap.<br>
+3. Automatically sorts using heap properties.<br>
+4. Use Heap Sort when exporting sorted list of high-priority services.</td>
+                <td>Heap-O(log n) average<br>
+                Heap Sort-O(n log n)average</td>
+                    
+            </tr>
 
-<div class="btn-grid">
-<button class="glow-button" onclick="show('dijkstra')">Dijkstra</button>
-<button class="glow-button" onclick="show('bfs')">BFS</button>
-<button class="glow-button" onclick="show('dfs')">DFS</button>
-<button class="glow-button" onclick="show('prim')">Prim’s</button>
-<button class="glow-button" onclick="show('binary')">Binary Search</button>
-<button class="glow-button" onclick="show('heap')">Min Heap</button>
-<button class="glow-button" onclick="show('pq')">Priority Queue</button>
-<button class="glow-button" onclick="show('merge')">Merge Sort</button>
-<button class="glow-button" onclick="show('quick')">Quick Sort</button>
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Document%20Version%20Update/dvu.cpp" target="_self">Document Version Update</a></td>
+                <td>Trie + AVL Tree+Binary search</td>
+                <td>1. Store document names in Trie to allow quick prefix search.<br>
+                2.Binary Search enables quick lookups.<br> 
+3. For each document, maintain versions inside AVL tree sorted by version number or timestamp.<br>
+4. When user updates, insert new version into AVL tree.<br>
+5. Keep only last N versions by deleting old nodes.</td>
+                  <td>trie-O(1) average<br>
+                  Binary Search-O(log n) average<br>
+                    AVL Tree-O(log n) average</td>
+            </tr>
 
-<div id="dijkstra" class="code-display">
-#include <iostream>
-#include <vector>
-#include <queue>
-using namespace std;
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Application%20Status%20Tracking/ast.cpp" target="_self">Application Status Tracking</a></td>
+                <td>Hash Table</td>
+                <td>1. Store each application with key = AppID.<br>
+2. Maintain fields: current stage, dept, timestamps.<br>
+3. On user request → fetch AppID in O(1).<br>
+4. Show real-time stage (submitted → verified → approved).</td>
+<td>Hash table-O(1) average</td>
+            </tr>
 
-const int INF = 1e9;
+            
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Application%20Submission/as.cpp" target="_self">Application Submission</a></td>
+                <td>Queue + Hash Table</td>
+                <td>1. Store form data temporarily in hash table using AppID.<br>
+2. Add AppID to processing queue.<br>
+3. Background workers process applications FIFO.<br>
+4. Update application status in hash table (verified, pending, rejected).<br>
+5. Notify user.</td>
+ <td>Queue-O(1) average<br>
+   Hash table-O(1) average</td>
+            </tr>
+           
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Document%20Download/dd.cpp" target="_self">Document Download</a></td>
+                <td>Hash Table + Cache (Queue)+Merge Sort</td>
+                <td>1. Maintain download/update logs in list.<br>
+2. Store metadata in hash table.<br>
+3. Sort logs by time/user using Merge Sort.</td>
+<td>Queue-O(1) average<br>
+   Hash table-O(1) average<br>
+  Merge Sort-O(n log n) average</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>**please click on the features to get their code**</strong></p>
+</div>    
+        
+                <div id="idea2-desc" class="description-content hidden">
+                    <h1>Smart bus tracking platform</h1>
+                    <p>A technology platform that helps passengers, bus operators, and city transport authorities track buses in real time and accurately predict arrival times.
+                        <h3>SDG's Associated</h3>
+                     <div class="sdg-container">
+    <div class="sdg">SDG 11 – Sustainable Cities & Communities</div>
+    <div class="sdg">SDG 9 – Industry, Innovation & Infrastructure</div>
+    <div class="sdg">SDG 13 – Climate Action</div>
+  </div>
+                    <img src="bus.jpeg" alt="Image" class="center-img">
 
-void dijkstra(int src, vector<vector<pair<int,int>>> &graph) {
-    vector<int> dist(graph.size(), INF);
-    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
-    dist[src] = 0;
-    pq.push({0, src});
+                    <h3>What all does it include</h3>
+                    <ul>
+                        <li>Shows real-time location of each bus on a map</li>
+                        <li>Provides delay alerts, route changes, breakdown alerts</li>
+                        <li>Predicts distance and estimated time of arrival (ETA) at each stop to reach the destination</li>
+                        <li>Fare estimation</li>
+                        <li>Displaying and alerts the next or nearby stop</li>
+                        <li>Alerts for bus nearing stop</li>
+                        <li>Ticket booking integration</li>
+                    </ul>
+                     <h3>problems faced in real-time before</h3>
+                    <ul>
+                      <li>Passengers have no idea when the bus will arrive — causing long waits, missed buses or crowding.</li>
+                      <li>Poor route planning causes higher fuel consumption</li>
+                        <li>No centralized platform to tell passengers:Delay,Route change,Cancelled trip</li>
+                        <li>Drivers accidentally take wrong routes or intentional shortcuts.</li>
+                        <li>People wait for several minutes under sun/rain because they don’t know bus timing.</li>
+                    </ul>
+                     <h3>Where it can be used</h3>
+                    <ul>
+                      <li>School buses,City bus transport,Metro feeder buses</li>
+                        <li>Private or Corporate transport services</li>
+                    </ul>
+                    </p>
+                     <div class="container">
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/Kusumithar29/DAA_2025/blob/5f04bff6fad81230f61114cea2db6b3d06851438/smart%20bus%20tracking/sbt.json" target="_blank" class="github-btn">
+                    Sample JSON Input File
+                </a>
+            </div>
+        </div>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
 
-    while(!pq.empty()) {
-        int u = pq.top().second;
-        pq.pop();
-        for(auto edge : graph[u]) {
-            int v = edge.first;
-            int w = edge.second;
-            if(dist[v] > dist[u] + w) {
-                dist[v] = dist[u] + w;
-                pq.push({dist[v], v});
-            }
-        }
-    }
-}
-</div>
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Live%20Bus%20GPS%20Tracking/gps.cpp" target="_self">Live Bus GPS Tracking</a></td>
+                <td>Hash Table+Array/List</td>
+                <td>1. Create a hash table mapping: BusID → Latest GPS coordinates.<br>
+                    2. Each bus sends location every X seconds.<br>
+                    3. Update hash table entry in O(1).<br>
+                    4. Use a dynamic list/array to maintain recent locations</td>
+               <td>Hash Table-O(1) average<br>
+                   Array-O(1) average</td>
+                    
+            </tr>
 
-<div id="bfs" class="code-display">
-#include <queue>
-void BFS(int start, vector<vector<int>>& graph) {
-    vector<bool> visited(graph.size(), false);
-    queue<int> q;
-    visited[start] = true;
-    q.push(start);
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Real-Time%20ETA/eta.cpp" target="_self">Real-Time ETA Prediction</a></td>
+                <td>Heap (Priority Queue),Dijkstra</td>
+                <td>1. Maintain live bus speed & traffic data.<br>
+2. For each bus, apply Dijkstra with min-heap to compute shortest-time path from current stop → target stop.<br>
+3. Combine with real-time traffic & historic timings (lookup table).<br>
+4. Continuously recalculate ETA on each GPS update.</td>
+                <td>Heap-O(log n) average<br>
+                Dijkstra-O(E log V)</td>
+            </tr>
 
-    while(!q.empty()) {
-        int node = q.front();
-        q.pop();
-        for(int adj : graph[node]) {
-            if(!visited[adj]) {
-                visited[adj] = true;
-                q.push(adj);
-            }
-        }
-    }
-}
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Route%20Mapping/rm.cpp" target="_self">Route Mapping</a></td>
+                <td>Graph (Adjacency List)BFS / Dijkstra</td>
+                <td>1. Represent entire city route network as a graph: stops = nodes, roads = edges.<br>
+2. Store graph using adjacency lists for memory efficiency.<br>
+3. Run BFS for shortest-hop paths (simple routes).<br>
+4. Run Dijkstra to compute shortest distance/time between stops.<br>
+5. Used during route planning & ETA prediction.</td>
+<td>BFS-O(V + E)<br>
+                Dijkstra-O(E log V)</td>
+            </tr>
+  <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Mapping%20Nearest%20Bus/mnb.cpp" target="_self">Mapping Nearest Bus to a Stop</a></td>
+                <td>Binary Search Tree(BST)</td>
+                <td>1. Maintain sorted distances of buses from stop.<br>
+2. Query nearest bus in O(log n).<br>
+3. Update tree on each GPS refresh.</td>
+<td>Binary Search Tree-O(log n) average)</td>
+            </tr>
+            
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Shortest%20Path/sp.cpp" target="_self">Shortest Path & Deviation Detection</a></td>
+                <td>Graph (Adjacency List),Dijkstra,Hash Table + Lists</td>
+                <td>1. Use adjacency-list graph to store entire bus route network.<br>
+2. Run Dijkstra to compute shortest expected path between stops for each route.<br>
+3. Store computed path in list for quick reference.<br>
+4. Maintain hash table: BusID → CurrentPathProgress.<br>
+5. Compare live GPS against expected path list.<br>
+6. Flag deviation if bus position is outside allowed nodes/edges.</td>
+<td>BFS-O(V + E)<br>
+                Dijkstra-O(E log V)<br>
+                Hash Table-O(1) average<br>
+                   list-O(1) average</td>
+            </tr>
 
-<div id="dfs" class="code-display">
-void DFS(int node, vector<vector<int>>& graph, vector<bool>& visited) {
-    visited[node] = true;
-    for(int adj : graph[node]) {
-        if(!visited[adj]) {
-            DFS(adj, graph, visited);
-        }
-    }
-}
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Shortest%20Path/sp.cpp" target="_self">Live Updates to App</a></td>
+                <td>Hash Table,Queue</td>
+                <td>1. Store latest bus data (location, speed, ETA) in hash table for instant read by API.<br>
+2. New updates from buses are pushed into an event queue.<br>
+3. Notification worker dequeues events and pushes updates to users via WebSockets/MQTT.<br>
+4. Ensures app always receives the freshest data.</td>
+  <td>Hash Table-O(1) average<br>
+                   Queue-O(1) average</td>
+            </tr>
 
-<div id="prim" class="code-display">
-#include <climits>
-void primMST(int V, vector<vector<int>>& graph) {
-    vector<int> key(V, INT_MAX);
-    vector<bool> mst(V, false);
-    key[0] = 0;
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Traffic%20Delay%20Estimation/tde.cpp" target="_self">Traffic Delay Estimation</a></td>
+                <td>Sliding Window (Concept),Heap (Min Heap),Lookup Table</td>
+                <td>1. Maintain sliding window of recent speed readings per road segment.<br>
+2. Compute average speed and compare with normal-speed lookup table.<br>
+3. If slowdown detected, push a delay event into min-heap ordered by severity/time.<br>
+4. Update ETA engine with delay factor.<br>
+5. Store typical travel times in lookup table for quick comparison.</td>
+<td>Sliding Window-O(1)<br>
+    Heap-O(log n)<br>
+       lookup table-O(n)</td>
+            </tr>
 
-    for(int i = 0; i < V - 1; i++) {
-        int u = -1;
-        for(int j = 0; j < V; j++)
-            if(!mst[j] && (u == -1 || key[j] < key[u]))
-                u = j;
-        mst[u] = true;
-        for(int v = 0; v < V; v++)
-            if(graph[u][v] && !mst[v] && graph[u][v] < key[v])
-                key[v] = graph[u][v];
-    }
-}
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/breakdown%20or%20fault%20alerts/ba.cpp" target="_self">Breakdown / Fault Alerts</a></td>
+                <td>Priority Queue (Heap),Hash Table</td>
+                <td>1. Store bus health metrics (engine temp, battery, fuel) in hash table.<br>
+2. If any sensor reports abnormal value, create an alert event with severity.<br>
+3. Push events into a max-priority heap (higher severity = higher priority).<br>
+4. Pop critical events and notify control room/app instantly.<br>
+5. Mark bus as "Faulted" in hash table for dispatching a backup vehicle.</td>
+<td>Hash Table-O(1) average<br>
+                   Priority Queue-O(log n)average</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/breakdown%20or%20fault%20alerts/ba.cpp" target="_self">Searching Buses, Routes, or Locations</a></td>
+                <td>Boyer–Moore Algorithm</td>
+                <td>1. Apply Boyer-Moore for fast pattern matching in large stop lists.</td>
+               <td>O(n/m)average</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>**please click on the features to get their code**</strong></p>
+        </div>
+                
+                <div id="idea3-desc" class="description-content hidden">
+                    <h1>Home energy monitoring system</h1>
+                    <p>A system that helps households track electricity usage in real time, identify wastage, reduce bills, and monitor appliance-level consumption.
+                        <h3>SDG's Associated</h3>
+                     <div class="sdg-container">
+    <div class="sdg">SDG 7 – Affordable & Clean Energy</div>
+    <div class="sdg">SDG 12 – Responsible Consumption</div>
+    <div class="sdg">SDG 13 – Climate Action</div>
+  </div>
+                    <img src="energy.jpeg" alt="Image" class="center-img">
 
-<div id="binary" class="code-display">
-int binarySearch(int arr[], int l, int r, int x) {
-    while(l <= r) {
-        int mid = l + (r - l) / 2;
-        if(arr[mid] == x) return mid;
-        if(arr[mid] < x) l = mid + 1;
-        else r = mid - 1;
-    }
-    return -1;
-}
-</div>
+                    <h3>What all does it include</h3>
+                      <ul>
+                        <li>Shows Real-time energy use</li>
+                        <li>Provides Per-appliance consumption</li>
+                        <li>identifies and alerts High-consuming devices</li>
+                        <li>identifies Wastage during night or idle hours</li>
+                        <li>sends live power usage data to the app every few seconds/minutes</li>
+                        <li>Monthly Bill estimation</li>
+                        <li>Maintains the history of consumption upto an year</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>Manual electricity tracking is impossible</li>
+                        <li>Hidden energy wastage</li>
+                        <li>High electricity bills with no clarity</li>
+                        <li>No prediction of future electricity bill</li>
+                    </ul>
+                    </p>
+                     <div class="container">
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/Kusumithar29/DAA_2025/blob/5f04bff6fad81230f61114cea2db6b3d06851438/home%20energy%20monitoring/hem.json" target="_blank" class="github-btn">
+                    Sample JSON Input File
+                </a>
+            </div>
+        </div>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
 
-<div id="heap" class="code-display">
-void heapify(int arr[], int n, int i) {
-    int smallest = i;
-    int l = 2*i + 1;
-    int r = 2*i + 2;
-    if(l < n && arr[l] < arr[smallest]) smallest = l;
-    if(r < n && arr[r] < arr[smallest]) smallest = r;
-    if(smallest != i) {
-        swap(arr[i], arr[smallest]);
-        heapify(arr, n, smallest);
-    }
-}
-</div>
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Energy%20Consumption%20Tracking/ect.cpp" target="_self">Energy Consumption Tracking</a></td>
+                <td>Hash Table+Array/List+Heap Sort</td>
+                <td>1. Maintain hash table: ApplianceID → Latest consumption value.<br>
+2. Store time series readings in arrays/lists per appliance.<br>
+3. Update hash table in O(1) whenever new sensor data arrives.<br>
+4. Use array/list for plotting historical usage trends.<br>
+5.Heapify after each extraction and Produces sorted list.</td>
+                 <td>Hash Table-O(1) average<br>
+                   Array-O(1) average<br>
+                   Heap Sort-O(n log n)average</td>
+                    
+            </tr>
 
-<div id="pq" class="code-display">
-#include <queue>
-priority_queue<int, vector<int>, greater<int>> pq;
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Appliance%20Usage%20Patterns/aup.cpp" target="_self">Appliance Usage Patterns & Analytics</a></td>
+                <td>Array + Hash Table</td>
+                <td>1. Store historical daily/hourly usage per appliance in arrays.<br>
+2. Hash table maps ApplianceID → Usage statistics.<br>
+3. Compare current usage against historical averages for anomaly detection.<br>
+4. Precompute totals using lookup tables for faster reporting.</td>
+ <td>Hash Table-O(1) average<br>
+                   Array-O(1) average</td>
+            </tr>
 
-<div id="merge" class="code-display">
-void merge(int arr[], int l, int m, int r) {
-    // merge logic
-}
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Energy%20Cost%20Prediction/ecp.cpp" target="_self">Energy Cost Prediction</a></td>
+                <td>Lookup Table + Array</td>
+                <td>1. Store tariff slabs, peak/off-peak rates in a lookup table.<br>
+2. Calculate estimated daily/weekly/monthly costs using appliance energy data in arrays.<br>
+3. Fetch rate from lookup table for O(1) computation.</td>
+ <td>Array-O(1) average<br>
+       lookup table-O(n)</td>
+            </tr>
+            
+             <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Alert%20on%20Overconsumption/ao.cpp" target="_self">Alert on Overconsumption</a></td>
+                <td>Sliding Window + Queue+Segment Tree</td>
+                <td>1. Maintain recent N energy readings for each appliance in a sliding window.<br>
+2. Compute average or threshold exceedance.<br>
+3. Queue alerts for appliances exceeding limits.<br>
+4. Trigger notifications to user/app.</td>
+                <td>Sliding Window-O(1)<br>
+             Queue-O(1) average</td>
+                    
+            </tr>
+        </tbody>
+        </table>
+        <p><strong>**please click on the features to get their code**</strong></p>
+                </div>
 
-<div id="quick" class="code-display">
-int partition(int arr[], int low, int high) {
-    int pivot = arr[high];
-    // partition logic
-}
-</div>
-</div>
+                <div id="idea4-desc" class="description-content hidden">
+                    <h1>Telecom fraud detection system</h1>
+                    <p>A unified platform that monitors subscriber/account signals, call/SMS behavior, and KYC/activity patterns to detect and block/flag.
+                        <h3>SDG's Associated</h3>
+                     <div class="sdg-container">
+    <div class="sdg">SDG 16 – Peace, Justice & Strong Institutions</div>
+    <div class="sdg">SDG 9 – Industry, Innovation & Infrastructure</div>
+    <div class="sdg">SDG 8 – Decent Work & Economic Growth</div>
+  </div>
+                    <img src="telecom.jpeg" alt="Image" class="center-img">
 
-<!-- ================= REFLECTION ================= -->
-<div class="container">
-<h2>Reflection & Learning Outcomes</h2>
-<p>
-This project strengthened the understanding of how classical algorithms can
-solve modern business problems across real estate, finance, culture-driven
-markets, and hospitality industries.
-</p>
-<ul>
-<li>Improved algorithmic problem-solving skills</li>
-<li>Understanding of business-driven system design</li>
-<li>Experience in documentation and UI structuring</li>
-<li>Linking theory with real-world applications</li>
-</ul>
-</div>
+                    <h3>What all does it include</h3>
+                      <ul>
+                        <li>Detects unauthorized SIM replacement attempts by monitoring location changes,login attempts,SIM change requests and Device change immediately after SIM swap</li>
+                        <li>Identifies identity fraud during customer onboarding by Duplicate KYC documents,Geolocation mismatch,Suspicious reseller or KYC agent patterns</li>
+                        <li>detect malicious callers by identifing Very high call volume in short time (spam),Calls to random numbers,Repeated international scam attempts,Reported numbers from crowdsource data</li>
+                        <li>Notify user & operator,Auto-block number, restrict outgoing calls, alert regulators,Block onboarding,flag KYC agent,temporary account lock</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>SIM Swap Fraud Problems</li>
+                        <li>Fake KYC Fraud Problems</li>
+                        <li>Spam / Robocalls / Scam Calls Problems</li>
+                        <li>Financial fraud fear and losses</li>
+                    </ul>
+                    </p>
+                     <div class="container">
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/Kusumithar29/DAA_2025/blob/5f04bff6fad81230f61114cea2db6b3d06851438/telecom%20fraud%20detection/tfd.json" target="_blank" class="github-btn">
+                    Sample JSON Input File
+                </a>
+            </div>
+        </div>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
 
-<!-- ================= ARCHITECTURE ================= -->
-<div class="container">
-<h2>System Architecture Overview</h2>
-<table>
-<tr><th>Layer</th><th>Description</th></tr>
-<tr><td>Input</td><td>Business data, customer demand, operational metrics</td></tr>
-<tr><td>Processing</td><td>Algorithms and data structures</td></tr>
-<tr><td>Decision</td><td>Optimized outputs and strategies</td></tr>
-<tr><td>Output</td><td>Reports, dashboards, insights</td></tr>
-</table>
-</div>
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/SIM%20Swap%20Detection/sim.cpp" target="_self">SIM Swap Detection</a></td>
+                <td>Hash Table + Sliding Window</td>
+                <td>1. Maintain hash table: PhoneNumber → Last SIM change timestamp & deviceID.<br>
+2. On SIM change request, check if previous change was within a short window (e.g., 24–48 hours).<br>
+3. Use sliding window to monitor frequency of SIM swaps across all numbers.<br>
+4. Flag suspicious activity and alert security team.</td>
+               <td>Sliding Window-O(1)<br>
+             Hash Table-O(1) average</td>
+            </tr>
 
-<!-- ================= FUTURE SCOPE ================= -->
-<div class="container">
-<h2>Future Scope</h2>
-<ul>
-<li>Integration with real-time datasets</li>
-<li>AI-based predictive analytics</li>
-<li>Cloud deployment for scalability</li>
-<li>Interactive dashboards</li>
-</ul>
-</div>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/spam%20call%20detection/spam.cpp" target="_self">Spam / Fraudulent Call Detection</a></td>
+                <td>Graph + BFS / Dijkstra + Sliding Window</td>
+                <td>1. Represent calls as a graph: nodes = phone numbers, edges = calls.<br>
+2. Use BFS to detect call loops or clusters of spam calls.<br>
+3. Apply sliding window on call frequency per number to detect abnormal bursts.<br>
+4. Use Dijkstra if weighted edges represent risk scores (call frequency, duration).</td>
+<td>Sliding Window-O(1)<br>
+             Dijkstra-O(E log V)<br>
+             BFS-O(V + E)</td>
+            </tr>
 
-<script>
-function show(id){
-    var blocks = document.getElementsByClassName("code-display");
-    for(var i=0;i<blocks.length;i++){
-        blocks[i].classList.remove("active");
-    }
-    document.getElementById(id).classList.add("active");
-}
-</script>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Fake%20KYC%20Detection/kyc.cpp" target="_self">Fake KYC Detection</a></td>
+                <td>Trie + Hash Table + BFS</td>
+                <td>1. Store customer names & documents in Trie for fast prefix & duplicate search.<br>
+2. Hash Table: DocID → CustomerID to quickly detect reused or duplicate documents.<br>
+3. BFS on customer network graph to detect overlapping connections between suspicious accounts.<br>
+4. Flag anomalies if multiple accounts share documents or personal info.</td>
+<td>Hash Table-O(1) average<br>
+  BFS-O(V + E)<br>
+  Trie-O(L)</td>
+            </tr>
+            
+             <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Fake%20KYC%20Detection/kyc.cpp" target="_self">Alerts & Notification System</a></td>
+                <td>Priority Queue (Heap)+Rabin Karp</td>
+                <td>1. Maintain alert events in a min/max heap: severity + timestamp.<br>
+2. Pop highest priority alerts to notify admins/security.<br>
+3. Reinsert for unresolved critical alerts.<br>
+4.Rabin–Karp: Use rolling hash to match substrings quickly.</td>
+                <td>Heap (Priority Queue)-O(log n)<br>
+                Rabin Karp-O(n + m) average</td>
+                    
+            </tr>
 
-<footer>
-© 2025 | Business Case Study Portfolio | Academic Project
-</footer>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Multi-account%20detection/mnd.cpp" target="_self">Multi-account / Network Fraud Detection</a></td>
+                <td>Graph + BFS + Heap</td>
+                <td>1. Build network graph: nodes = accounts, edges = shared phone numbers, devices, or IDs.<br>
+2. Use BFS to explore clusters of suspicious accounts.<br>
+3. Use Heap (priority queue) to rank high-risk accounts based on combined risk score.</td>
+<td>Adjacency List-O(V + E)<br>
+  BFS-O(V + E)<br>
+  Heap-O(log n)</td>
+            </tr>
+        
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Messaging%20Spam%20Detection/msd.cpp" target="_self">SMS / Messaging Spam Detection</a></td>
+                <td>Trie + Hash Table+Rabin–Karp</td>
+                <td>1. Store keywords/patterns in Trie for fast search.<br><br>
+2. Maintain hash table: SenderNumber → message count/time window.<br>
+3. Flag senders exceeding threshold for repeated spam messages.<br>
+4.Rabin–Karp: Use rolling hash to match substrings quickly.</td>
+<td>Trie-O(L)<br>
+Hash Table-O(1) average<br>
+Rabin Karp-O(n + m) average</td>
+            </tr>
 
+        </tbody>
+      </table>
+      <p><strong>**please click on the features to get their code**</strong></p>
+                </div>
+                
+                <div id="idea5-desc" class="description-content hidden">
+                    <h1>Smart parking platform</h1>
+                    <p>A smart parking system to detect empty parking slots and guide users to them in real time.
+                        <h3>SDG's Associated</h3>
+                     <div class="sdg-container">
+    <div class="sdg">SDG 11 – Sustainable Cities & Communities</div>
+    <div class="sdg">SDG 9 – Industry, Innovation & Infrastructure</div>
+    <div class="sdg">SDG 13 – Climate Action</div>
+  </div>
+                    <img src="parking.jpeg" alt="Image" class="center-img">
+
+                    <h3>What all does it include</h3>
+                    <ul>
+                        <li>Shows Real-time availability on the app</li>
+                        <li>Provides Parking duration and Then accordingly estimates cost</li>
+                        <li>displays Slot status (free/occupied)</li>
+                        <li>Overstay / Illegal Parking Detection</li>
+                        <li>Vehicals will be CCTV surveillance</li>
+                    </ul>
+                     <h3>Problems faced in real-time before</h3>
+                    <ul>
+                      <li>Difficulty Finding Available Parking Spots</li>
+                        <li>Illegal Parking & Road Blockage</li>
+                        <li>No Digital Payment or Automation</li>
+                        <li>Lack of Security</li>
+                    </ul>
+                     <h3>Where it can be used</h3>
+                    <ul>
+                      <li>Airport,railway station and Mall parking</li>
+                        <li>Smart city parking for public,residential and tech parks areas</li>
+                    </ul>
+                     </p>
+                     <div class="container">
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/Kusumithar29/DAA_2025/blob/5f04bff6fad81230f61114cea2db6b3d06851438/smart%20parking%20system/sps.json" target="_blank" class="github-btn">
+                    Sample JSON Input File
+                </a>
+            </div>
+        </div>
+                    <h3>How it is implemented </h3>
+                    </p>
+    <table class="ads-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Algorithm / Data Structure</th>
+                <th>implementation steps</th>
+                <th>efficiency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Parking%20Slot%20Availability/psa.cpp" target="_self">Parking Slot Availability</a></td>
+                <td>Hash Table</td>
+                <td>1. Map: SlotID → Status (Free/Occupied).<br>
+2. Update status in O(1) whenever a sensor sends data.<br>
+3. Store vehicle info (vehicle no., time-in) in hash entry.<br>
+4. Used by mobile app to show live slot availability.</td>
+                <td>Hash Table-O(1) average</td>
+                    
+            </tr>
+
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Vehicle%20Entry%20or%20exit/vep.cpp" target="_self">Vehicle Entry / Exit Processing</a></td>
+                <td>Queue+array+Insertion Sort</td>
+                <td>1. Maintain entry/exit request queue during peak hours.<br>
+2. Dequeue requests sequentially to avoid congestion<br>
+3. Update slot availability after each dequeue.<br>
+4. Store historical logs in array/list.<br>
+5. Insert new arriving vehicle into sorted list and Keeps list sorted in near O(n).</td>
+<td>Queue-O(1) average
+Array-Array-O(1) average<br>
+Insertion Sort-O(n²)average</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Payment%20Billing%20%26%20Duration%20Calculation/bdc.cpp" target="_self">Payment Billing & Duration Calculation</a></td>
+                <td>Hash Table + Lookup Table</td>
+                <td>1. Retrieve time-in/time-out using hash table.<br>
+2. Compute duration instantly.<br>
+3. Fetch rate from lookup table.<br>
+4. Auto-generate billclass=""</td>
+<td>Hash Table-O(1) average<br>
+lookup table-O(n)</td>
+            </tr>
+            
+             <tr>
+                <td><a href="https://github.com/Kusumithar29/DAA_2025/blob/67dd6e553d4d8931dda39e2131f5d7d2c0ade40d/Illegal%20Parking%20Detectio/ipd.cpp" target="_self">Overstay / Illegal Parking Detection</a></td>
+                <td>Hash Table + Timers (Lists)</td>
+                <td>1. Maintain time-in in hash entry for each occupied slot.<br>
+2. Continuously check elapsed time.<br>
+3. If > allowed duration, flag slot/vehicle.<br>
+4. Trigger fine notification.</td>
+                <td>Hash Table-O(1) average<br>
+                lists-O(1) average</td>
+                    
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>**please click on the features to get their code**</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
